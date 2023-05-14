@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Security;
 using System.Security.AccessControl;
 using System.Security.Principal;
 using System.Text;
@@ -25,14 +26,12 @@ namespace QR.Models
                 string authToken = actionContext.Request.Headers.Authorization.Parameter;
                 string decodedAuthToken = Encoding.UTF8.GetString(Convert.FromBase64String(authToken));
                 string[] UandP = decodedAuthToken.Split(':');
-                string uname = UandP[0];
-                string password = UandP[1];
-
-                var status = UserSecurity.login(uname, password);
+                string comTaxNO = UandP[0];
+                string Password = UandP[1];
+                var status = UserSecurity.login(comTaxNO, Password);
                 if (status)
                 {
-                    Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(uname), null);
-
+                    Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(comTaxNO), null);
                 }
                 else
                 {

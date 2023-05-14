@@ -1,0 +1,1620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Scopos_Customers_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="branch_tbl">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ComID" Type="int" />
+          <Property Name="branchID" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="country" Type="nvarchar" MaxLength="50" />
+          <Property Name="governate" Type="nvarchar" MaxLength="50" />
+          <Property Name="regionCity" Type="nvarchar" MaxLength="50" />
+          <Property Name="street" Type="nvarchar" MaxLength="200" />
+          <Property Name="buildingNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="postalCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="floor" Type="nvarchar" MaxLength="50" />
+          <Property Name="room" Type="nvarchar" MaxLength="50" />
+          <Property Name="landmark" Type="nvarchar" MaxLength="50" />
+          <Property Name="additionalInformation" Type="nvarchar" MaxLength="50" />
+          <Property Name="mailFrom" Type="nvarchar" MaxLength="50" />
+          <Property Name="sendrPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="maillTo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Smtp_Server_Port" Type="nvarchar" MaxLength="50" />
+          <Property Name="Smtp_Server_Host" Type="nvarchar" MaxLength="50" />
+          <Property Name="databaseConnGet" Type="nvarchar" MaxLength="500" />
+          <Property Name="ResponseTableName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ReceiptNumberColumnName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="branshs_log_tbl">
+          <Key>
+            <PropertyRef Name="Recourd_Id" />
+          </Key>
+          <Property Name="Recourd_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReceiptNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="ReceiptType" Type="nvarchar" MaxLength="5" />
+          <Property Name="transferDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="Response" Type="nvarchar" MaxLength="2000" />
+          <Property Name="uuid" Type="nvarchar" MaxLength="150" />
+          <Property Name="PreviousUuid" Type="nvarchar" MaxLength="150" />
+          <Property Name="ReferenceOldUuid" Type="nvarchar" MaxLength="150" />
+          <Property Name="sendToETA" Type="tinyint" />
+          <Property Name="validation" Type="nvarchar" MaxLength="50" />
+          <Property Name="submissionUuid" Type="nvarchar" MaxLength="150" />
+          <Property Name="branshId" Type="nvarchar" MaxLength="50" />
+          <Property Name="COMID" Type="int" />
+          <Property Name="posserial" Type="nvarchar" MaxLength="50" />
+          <Property Name="BranchName" Type="nvarchar" MaxLength="150" />
+          <Property Name="edit_date" Type="datetime" />
+          <Property Name="ReceiptNumberAsNumber" Type="int" />
+          <Property Name="NetAmount" Type="decimal" Precision="10" Scale="5" />
+        </EntityType>
+        <EntityType Name="Category_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Editor" Type="nvarchar" MaxLength="100" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Status" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="Com_Tbl">
+          <Key>
+            <PropertyRef Name="Recourd_ID" />
+          </Key>
+          <Property Name="id" Type="int" />
+          <Property Name="type" Type="nvarchar" MaxLength="50" />
+          <Property Name="branchID" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="150" />
+          <Property Name="country" Type="nvarchar" MaxLength="50" />
+          <Property Name="governate" Type="nvarchar" MaxLength="50" />
+          <Property Name="regionCity" Type="nvarchar" MaxLength="50" />
+          <Property Name="street" Type="nvarchar" MaxLength="50" />
+          <Property Name="buildingNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="postalCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="floor" Type="nvarchar" MaxLength="50" />
+          <Property Name="room" Type="nvarchar" MaxLength="50" />
+          <Property Name="landmark" Type="nvarchar" MaxLength="50" />
+          <Property Name="additionalInformation" Type="nvarchar" MaxLength="50" />
+          <Property Name="taxpayerActivityCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="Recourd_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RunType" Type="bit" />
+          <Property Name="ArrangeWorkTimes" Type="decimal" Precision="10" Scale="4" />
+          <Property Name="NextRunTime" Type="datetime" />
+          <Property Name="RunStutes" Type="bit" />
+          <Property Name="ClientId" Type="nvarchar" MaxLength="100" />
+          <Property Name="editor" Type="nvarchar" MaxLength="150" />
+          <Property Name="dashboardConnGet" Type="nvarchar" MaxLength="500" />
+          <Property Name="TypeVersion" Type="nvarchar" MaxLength="10" />
+          <Property Name="SendToEtaWay" Type="int" />
+          <Property Name="ItemFlag" Type="int" />
+          <Property Name="PriceFlag" Type="int" />
+          <Property Name="Password" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Currency_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Currency" Type="nvarchar" MaxLength="50" />
+          <Property Name="currencyExchangeRate" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="Cus_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyName" Type="nvarchar" MaxLength="100" />
+          <Property Name="ContactName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Telephone1" Type="nvarchar" MaxLength="100" />
+          <Property Name="TaxRegistration" Type="nvarchar" MaxLength="100" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Address" Type="nvarchar" MaxLength="100" />
+          <Property Name="Comment" Type="nvarchar(max)" />
+          <Property Name="Editor" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="SalesContact" Type="nvarchar" MaxLength="50" />
+          <Property Name="SalesContact_ID" Type="int" />
+          <Property Name="status" Type="tinyint" />
+          <Property Name="country" Type="nvarchar" MaxLength="50" />
+          <Property Name="governate" Type="nvarchar" MaxLength="50" />
+          <Property Name="regionCity" Type="nvarchar" MaxLength="50" />
+          <Property Name="street" Type="nvarchar" MaxLength="50" />
+          <Property Name="buildingNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="postalCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="floor" Type="nvarchar" MaxLength="50" />
+          <Property Name="room" Type="nvarchar" MaxLength="50" />
+          <Property Name="landmark" Type="nvarchar" MaxLength="50" />
+          <Property Name="additionalInformation" Type="nvarchar" MaxLength="50" />
+          <Property Name="type" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="dbo_Scopos_error_log_tbl">
+          <Key>
+            <PropertyRef Name="Record_Id" />
+          </Key>
+          <Property Name="Record_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReceiptNumber" Type="nvarchar" MaxLength="200" />
+          <Property Name="uuid" Type="nvarchar" MaxLength="200" />
+          <Property Name="message" Type="nvarchar" MaxLength="2000" />
+          <Property Name="target" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Response" Type="nvarchar" MaxLength="2000" />
+        </EntityType>
+        <EntityType Name="Department_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Department" Type="nvarchar" MaxLength="50" />
+          <Property Name="Editor" Type="nvarchar" MaxLength="100" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="status" Type="tinyint" />
+          <Property Name="branchID" Type="int" />
+        </EntityType>
+        <EntityType Name="ETA_document_Tbl">
+          <Key>
+            <PropertyRef Name="Recourd_Id" />
+          </Key>
+          <Property Name="Com_TAX_No" Type="int" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="Environment_ID" Type="int" />
+          <Property Name="Environment" Type="nvarchar" MaxLength="50" />
+          <Property Name="documentTypeVersion" Type="nvarchar" MaxLength="50" />
+          <Property Name="documentType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Login_URL" Type="nvarchar" MaxLength="200" />
+          <Property Name="client_id" Type="nvarchar" MaxLength="200" />
+          <Property Name="client_secret" Type="nvarchar" MaxLength="200" />
+          <Property Name="client_secret_2" Type="nvarchar" MaxLength="200" />
+          <Property Name="TokenPin" Type="nvarchar" MaxLength="50" />
+          <Property Name="DocumentSubmissions_URL" Type="nvarchar" MaxLength="200" />
+          <Property Name="Recourd_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TokenCompny" Type="nvarchar" MaxLength="50" />
+          <Property Name="editor" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Integrate_setup_tbl_New">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Com_Tax_No" Type="int" />
+          <Property Name="DataSourceType" Type="tinyint" />
+          <Property Name="DataResponseType" Type="tinyint" />
+          <Property Name="InsertResponse" Type="tinyint" />
+          <Property Name="ExelFilePath" Type="nvarchar" MaxLength="200" />
+          <Property Name="ExelFileBackupPath" Type="nvarchar" MaxLength="200" />
+          <Property Name="ExelFileName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ExelTabName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mail" Type="nvarchar(max)" />
+          <Property Name="fillGV" Type="nvarchar(max)" />
+          <Property Name="FillDashboard" Type="nvarchar(max)" />
+          <Property Name="SearchInvent_1" Type="nvarchar(max)" />
+          <Property Name="SearchInvent_2" Type="nvarchar(max)" />
+          <Property Name="SetResponse_TableName" Type="nvarchar" MaxLength="100" />
+          <Property Name="SetResponse_Response_ColName" Type="nvarchar" MaxLength="100" />
+          <Property Name="SetResponse_validation_ColName" Type="nvarchar" MaxLength="100" />
+          <Property Name="SetResponse_sendToetaStatus_ColName" Type="nvarchar" MaxLength="100" />
+          <Property Name="SetResponse_sendToetaDate_ColName" Type="nvarchar" MaxLength="100" />
+          <Property Name="SetResponse_InvNo_ColName" Type="nvarchar" MaxLength="100" />
+          <Property Name="SetResponse_RecourdID_ColName" Type="nvarchar" MaxLength="100" />
+          <Property Name="DataSourceQuery_H_Re_Submit_Issues" Type="nvarchar(max)" />
+          <Property Name="DataSourceQuery_H" Type="nvarchar(max)" />
+          <Property Name="DataSourceQuery_D" Type="nvarchar(max)" />
+          <Property Name="InsertResponseQuery" Type="nvarchar(max)" />
+          <Property Name="GetAllValid_Query" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GetAllInValid_Query" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GetAllSubmet_Query" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GetAllUnSubmet_Query" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GetAllUnCanceld_Query" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GetAllUnReject_Query" Type="nvarchar" MaxLength="1000" />
+          <Property Name="FillDashPord" Type="nvarchar" MaxLength="100" />
+          <Property Name="Linlk_H_With_D_By_ColName" Type="nvarchar" MaxLength="100" />
+          <Property Name="GetReportSales" Type="nvarchar" MaxLength="300" />
+          <Property Name="GetReportPurchases" Type="nvarchar" MaxLength="300" />
+          <Property Name="Select_Coll_29" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_30" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_31" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_32" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_33" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_34" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_35" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_36" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_37" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_38" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_39" Type="nvarchar" MaxLength="100" />
+          <Property Name="Select_Coll_40" Type="nvarchar" MaxLength="100" />
+          <Property Name="editor" Type="nvarchar" MaxLength="150" />
+          <Property Name="SetResponseDB" Type="nvarchar" MaxLength="400" />
+          <Property Name="DataSource_Conn" Type="nvarchar" MaxLength="400" />
+          <Property Name="CallApi_URL" Type="nvarchar" MaxLength="400" />
+          <Property Name="CallApi_CONSUMERKEY" Type="nvarchar" MaxLength="400" />
+          <Property Name="CallApi_CONSUMERSECRET" Type="nvarchar" MaxLength="400" />
+          <Property Name="CallApi_TOKENKEY" Type="nvarchar" MaxLength="400" />
+          <Property Name="CallApi_TOKENSECRET" Type="nvarchar" MaxLength="400" />
+          <Property Name="CallApi_Realm" Type="nvarchar" MaxLength="40" />
+          <Property Name="CallApi_script" Type="nvarchar" MaxLength="40" />
+          <Property Name="CallApi_deploy" Type="nvarchar" MaxLength="50" />
+          <Property Name="CallApi_ComID" Type="int" />
+        </EntityType>
+        <EntityType Name="LicenseTbl">
+          <Key>
+            <PropertyRef Name="Recourd_ID" />
+          </Key>
+          <Property Name="Recourd_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ComName" Type="nvarchar" MaxLength="150" />
+          <Property Name="TaxNumber" Type="nvarchar" MaxLength="150" />
+          <Property Name="DBName" Type="nvarchar" MaxLength="150" />
+          <Property Name="DBAccount" Type="nvarchar" MaxLength="150" />
+          <Property Name="DBPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="SetteingDBNAME" Type="nvarchar" MaxLength="150" />
+          <Property Name="Conn" Type="nvarchar(max)" />
+          <Property Name="Logger" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Measurement_Units_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Measurement_Units" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MyContact_tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="TeleponeNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="WhatsAppSendMsgStatus" Type="int" />
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WhatsAppSendMsgTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Names_Translation_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Arabic" Type="nvarchar" MaxLength="50" />
+          <Property Name="English" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Payment_Point_Tbl">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ActualAmount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="PaymentDate" Type="datetime" />
+          <Property Name="TotalAmount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Editor" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="PaymentMethod" Type="nvarchar" MaxLength="50" />
+          <Property Name="SettlementType" Type="int" />
+          <Property Name="BillNo" Type="int" />
+          <Property Name="CheckDetails" Type="nvarchar" MaxLength="100" />
+          <Property Name="Currency" Type="nvarchar" MaxLength="50" />
+          <Property Name="CollectionPeriod" Type="int" />
+          <Property Name="Penalty" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Discount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="SupplyExpenses" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Other" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="PosMachin_tbl">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="comid" Type="int" />
+          <Property Name="branchID" Type="int" />
+          <Property Name="POS_id" Type="int" />
+          <Property Name="LicenseExpiryDate" Type="datetime" />
+          <Property Name="POSName" Type="nvarchar" MaxLength="50" />
+          <Property Name="posserial" Type="nvarchar" MaxLength="50" />
+          <Property Name="clintId" Type="nvarchar" MaxLength="50" />
+          <Property Name="scId" Type="nvarchar" MaxLength="200" />
+          <Property Name="pososversion" Type="nvarchar" MaxLength="50" />
+          <Property Name="status" Type="bit" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ENVIRONMENT" Type="tinyint" />
+          <Property Name="AndroidID" Type="nvarchar" MaxLength="200" />
+          <Property Name="licenseStatus" Type="bit" />
+          <Property Name="databaseConnGet" Type="nvarchar" MaxLength="300" />
+          <Property Name="databaseConnSet" Type="nvarchar" MaxLength="300" />
+          <Property Name="DBSetType" Type="tinyint" />
+          <Property Name="DBGetType" Type="tinyint" />
+          <Property Name="LastRunning" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Registeration_Request_Tbl">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyName" Type="nvarchar" MaxLength="100" />
+          <Property Name="BranchName" Type="nvarchar" MaxLength="100" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="AndroidID" Type="nvarchar(max)" />
+          <Property Name="PosSerial" Type="nvarchar" MaxLength="50" />
+          <Property Name="Status" Type="tinyint" />
+          <Property Name="ComID" Type="int" />
+          <Property Name="Date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RunningLog_tbl">
+          <Key>
+            <PropertyRef Name="Record_Id" />
+          </Key>
+          <Property Name="Record_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="running_time" Type="datetime" />
+          <Property Name="branshId" Type="int" />
+          <Property Name="BranchName" Type="nvarchar" MaxLength="50" />
+          <Property Name="inv_count" Type="int" />
+          <Property Name="running_feadback" Type="nvarchar" MaxLength="1000" />
+          <Property Name="SellerRin" Type="int" />
+        </EntityType>
+        <EntityType Name="Sales_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="TeleponeNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="WhatsAppSendMsgStatus" Type="int" />
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WhatsAppSendMsgTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TblAssignComp">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="Comp_TAX_No" Type="int" />
+          <Property Name="Group_RecordID" Type="int" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AuthenticationRequired" Type="int" />
+          <Property Name="Com_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="TblAssignFunctions">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="Group_RecordID" Type="int" />
+          <Property Name="Function_RecordID" Type="int" />
+          <Property Name="AuthenticationRequired" Type="int" />
+          <Property Name="TableName" Type="nvarchar" MaxLength="50" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TblAssignGroup">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="User_RecordID" Type="int" />
+          <Property Name="Group_RecordID" Type="int" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AuthenticationRequired" Type="int" />
+        </EntityType>
+        <EntityType Name="TblAttachedFiles">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerID" Type="nvarchar" MaxLength="50" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Editor" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TblDeals">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="MOBILE" Type="int" />
+          <Property Name="OVD" Type="money" />
+          <Property Name="DEAL_DATE" Type="datetime" />
+          <Property Name="NEW_EMI_DATE" Type="datetime" />
+          <Property Name="DEAL_AMOUNT" Type="money" />
+          <Property Name="DEPOSIT" Type="money" />
+          <Property Name="NEW_EMI" Type="money" />
+          <Property Name="1ST_MONTH" Type="datetime" />
+          <Property Name="TENOR" Type="int" />
+          <Property Name="WAIVED_AMOUNT" Type="money" />
+          <Property Name="ACTION_TRUE" Type="nvarchar" MaxLength="255" />
+          <Property Name="LEGAL" Type="nvarchar" MaxLength="255" />
+          <Property Name="LETTER" Type="nvarchar" MaxLength="255" />
+          <Property Name="CALL_RECORDED_TIME" Type="nvarchar" MaxLength="255" />
+          <Property Name="EXT" Type="nvarchar" MaxLength="255" />
+          <Property Name="AGENCY" Type="nvarchar" MaxLength="255" />
+          <Property Name="OFFICER" Type="nvarchar" MaxLength="255" />
+          <Property Name="NOTES" Type="nvarchar(max)" />
+          <Property Name="user_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Time" Type="datetime" />
+          <Property Name="ACC" Type="int" />
+          <Property Name="ID" Type="int" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CUSTOMER" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="TblError">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Error" Type="nvarchar(max)" />
+          <Property Name="Msg" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="TblFunctions">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="FunctionName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AuthenticationRequired" Type="int" />
+          <Property Name="Perm" Type="int" />
+        </EntityType>
+        <EntityType Name="TblGroups">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="GroupName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AuthenticationRequired" Type="int" />
+          <Property Name="Status" Type="tinyint" />
+          <Property Name="MainGroup_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="TblLoginType">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="LoginType" Type="nvarchar" MaxLength="50" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AuthenticationRequired" Type="int" />
+        </EntityType>
+        <EntityType Name="TblPasswordHistory">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_RecordID" Type="int" />
+          <Property Name="TimeStamp" Type="datetime" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TblUsers">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="UserName" Type="nvarchar" MaxLength="150" />
+          <Property Name="UserAccount" Type="nvarchar" MaxLength="300" />
+          <Property Name="Password" Type="nvarchar" MaxLength="300" />
+          <Property Name="Description" Type="nvarchar" MaxLength="300" />
+          <Property Name="LoginType" Type="int" />
+          <Property Name="AccountIsDisabled" Type="int" />
+          <Property Name="AccountsIsLockedOut" Type="int" />
+          <Property Name="LoginState" Type="int" />
+          <Property Name="AuthenticationRequired" Type="int" />
+          <Property Name="Manager_RecordID" Type="nvarchar" MaxLength="50" />
+          <Property Name="Branch_RecordID" Type="int" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LastPasswordUpdate" Type="datetime" />
+          <Property Name="PasswordNeverExpires" Type="int" />
+          <Property Name="UserCannotChangePassword" Type="int" />
+          <Property Name="UserMustChangePasswordAtNextLogon" Type="int" />
+          <Property Name="Editor" Type="nvarchar" MaxLength="100" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="status" Type="tinyint" />
+          <Property Name="Role" Type="int" />
+          <Property Name="ComID" Type="int" />
+        </EntityType>
+        <EntityContainer Name="Scopos_Customers_DBModelStoreContainer">
+          <EntitySet Name="branch_tbl" EntityType="Self.branch_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="branshs_log_tbl" EntityType="Self.branshs_log_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category_Tbl" EntityType="Self.Category_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Com_Tbl" EntityType="Self.Com_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Currency_Tbl" EntityType="Self.Currency_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cus_Tbl" EntityType="Self.Cus_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="dbo_Scopos_error_log_tbl" EntityType="Self.dbo_Scopos_error_log_tbl" Schema="dbo" Table="dbo.Scopos_error_log_tbl" store:Type="Tables" />
+          <EntitySet Name="Department_Tbl" EntityType="Self.Department_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ETA_document_Tbl" EntityType="Self.ETA_document_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Integrate_setup_tbl_New" EntityType="Self.Integrate_setup_tbl_New" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LicenseTbl" EntityType="Self.LicenseTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Measurement_Units_Tbl" EntityType="Self.Measurement_Units_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MyContact_tbl" EntityType="Self.MyContact_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Names_Translation_Tbl" EntityType="Self.Names_Translation_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Payment_Point_Tbl" EntityType="Self.Payment_Point_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PosMachin_tbl" EntityType="Self.PosMachin_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Registeration_Request_Tbl" EntityType="Self.Registeration_Request_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RunningLog_tbl" EntityType="Self.RunningLog_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sales_Tbl" EntityType="Self.Sales_Tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAssignComp" EntityType="Self.TblAssignComp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAssignFunctions" EntityType="Self.TblAssignFunctions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAssignGroup" EntityType="Self.TblAssignGroup" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAttachedFiles" EntityType="Self.TblAttachedFiles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblDeals" EntityType="Self.TblDeals" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblError" EntityType="Self.TblError" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblFunctions" EntityType="Self.TblFunctions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblGroups" EntityType="Self.TblGroups" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblLoginType" EntityType="Self.TblLoginType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblPasswordHistory" EntityType="Self.TblPasswordHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblUsers" EntityType="Self.TblUsers" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Scopos_Customers_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="branch_tbl">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ComID" Type="Int32" />
+          <Property Name="branchID" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="governate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="regionCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="street" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="buildingNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="postalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="floor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="room" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="landmark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="additionalInformation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mailFrom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sendrPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="maillTo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Smtp_Server_Port" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Smtp_Server_Host" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="databaseConnGet" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ResponseTableName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ReceiptNumberColumnName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="branshs_log_tbl">
+          <Key>
+            <PropertyRef Name="Recourd_Id" />
+          </Key>
+          <Property Name="Recourd_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReceiptNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ReceiptType" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="transferDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Response" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="uuid" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="PreviousUuid" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ReferenceOldUuid" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="sendToETA" Type="Byte" />
+          <Property Name="validation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="submissionUuid" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="branshId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="COMID" Type="Int32" />
+          <Property Name="posserial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BranchName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="edit_date" Type="DateTime" Precision="3" />
+          <Property Name="ReceiptNumberAsNumber" Type="Int32" />
+          <Property Name="NetAmount" Type="Decimal" Precision="10" Scale="5" />
+        </EntityType>
+        <EntityType Name="Category_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Editor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Byte" />
+        </EntityType>
+        <EntityType Name="Com_Tbl">
+          <Key>
+            <PropertyRef Name="Recourd_ID" />
+          </Key>
+          <Property Name="id" Type="Int32" />
+          <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="branchID" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="governate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="regionCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="buildingNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="postalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="floor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="room" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="landmark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="additionalInformation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="taxpayerActivityCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Recourd_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RunType" Type="Boolean" />
+          <Property Name="ArrangeWorkTimes" Type="Decimal" Precision="10" Scale="4" />
+          <Property Name="NextRunTime" Type="DateTime" Precision="3" />
+          <Property Name="RunStutes" Type="Boolean" />
+          <Property Name="ClientId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="editor" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="dashboardConnGet" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="TypeVersion" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SendToEtaWay" Type="Int32" />
+          <Property Name="ItemFlag" Type="Int32" />
+          <Property Name="PriceFlag" Type="Int32" />
+          <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Currency_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Currency" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="currencyExchangeRate" Type="Decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="Cus_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ContactName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Telephone1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TaxRegistration" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Editor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="SalesContact" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SalesContact_ID" Type="Int32" />
+          <Property Name="status" Type="Byte" />
+          <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="governate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="regionCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="buildingNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="postalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="floor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="room" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="landmark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="additionalInformation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="dbo_Scopos_error_log_tbl">
+          <Key>
+            <PropertyRef Name="Record_Id" />
+          </Key>
+          <Property Name="Record_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReceiptNumber" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="uuid" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="message" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="target" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Response" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Department_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Editor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Byte" />
+          <Property Name="branchID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ETA_document_Tbl">
+          <Key>
+            <PropertyRef Name="Recourd_Id" />
+          </Key>
+          <Property Name="Com_TAX_No" Type="Int32" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="Environment_ID" Type="Int32" />
+          <Property Name="Environment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="documentTypeVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="documentType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Login_URL" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="client_id" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="client_secret" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="client_secret_2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="TokenPin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DocumentSubmissions_URL" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Recourd_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TokenCompny" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="editor" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Integrate_setup_tbl_New">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Com_Tax_No" Type="Int32" />
+          <Property Name="DataSourceType" Type="Byte" />
+          <Property Name="DataResponseType" Type="Byte" />
+          <Property Name="InsertResponse" Type="Byte" />
+          <Property Name="ExelFilePath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ExelFileBackupPath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ExelFileName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ExelTabName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="fillGV" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FillDashboard" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SearchInvent_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SearchInvent_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SetResponse_TableName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SetResponse_Response_ColName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SetResponse_validation_ColName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SetResponse_sendToetaStatus_ColName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SetResponse_sendToetaDate_ColName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SetResponse_InvNo_ColName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SetResponse_RecourdID_ColName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DataSourceQuery_H_Re_Submit_Issues" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DataSourceQuery_H" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DataSourceQuery_D" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InsertResponseQuery" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GetAllValid_Query" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GetAllInValid_Query" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GetAllSubmet_Query" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GetAllUnSubmet_Query" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GetAllUnCanceld_Query" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GetAllUnReject_Query" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="FillDashPord" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Linlk_H_With_D_By_ColName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="GetReportSales" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="GetReportPurchases" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_29" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_30" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_31" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_32" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_33" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_34" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_35" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_36" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_37" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_38" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_39" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Select_Coll_40" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="editor" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="SetResponseDB" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="DataSource_Conn" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="CallApi_URL" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="CallApi_CONSUMERKEY" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="CallApi_CONSUMERSECRET" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="CallApi_TOKENKEY" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="CallApi_TOKENSECRET" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="CallApi_Realm" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="CallApi_script" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="CallApi_deploy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CallApi_ComID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="LicenseTbl">
+          <Key>
+            <PropertyRef Name="Recourd_ID" />
+          </Key>
+          <Property Name="Recourd_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ComName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="TaxNumber" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="DBName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="DBAccount" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="DBPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SetteingDBNAME" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Conn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Logger" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Measurement_Units_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Measurement_Units" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MyContact_tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="TeleponeNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WhatsAppSendMsgStatus" Type="Int32" />
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WhatsAppSendMsgTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Names_Translation_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Arabic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="English" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Payment_Point_Tbl">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ActualAmount" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="PaymentDate" Type="DateTime" Precision="3" />
+          <Property Name="TotalAmount" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Editor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="PaymentMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SettlementType" Type="Int32" />
+          <Property Name="BillNo" Type="Int32" />
+          <Property Name="CheckDetails" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Currency" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CollectionPeriod" Type="Int32" />
+          <Property Name="Penalty" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Discount" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="SupplyExpenses" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Other" Type="Decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="PosMachin_tbl">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="comid" Type="Int32" />
+          <Property Name="branchID" Type="Int32" />
+          <Property Name="POS_id" Type="Int32" />
+          <Property Name="LicenseExpiryDate" Type="DateTime" Precision="3" />
+          <Property Name="POSName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="posserial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="clintId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="scId" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="pososversion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="status" Type="Boolean" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ENVIRONMENT" Type="Byte" />
+          <Property Name="AndroidID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="licenseStatus" Type="Boolean" />
+          <Property Name="databaseConnGet" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="databaseConnSet" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="DBSetType" Type="Byte" />
+          <Property Name="DBGetType" Type="Byte" />
+          <Property Name="LastRunning" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Registeration_Request_Tbl">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="BranchName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="BranchID" Type="Int32" />
+          <Property Name="AndroidID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PosSerial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Byte" />
+          <Property Name="ComID" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="RunningLog_tbl">
+          <Key>
+            <PropertyRef Name="Record_Id" />
+          </Key>
+          <Property Name="Record_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="running_time" Type="DateTime" Precision="3" />
+          <Property Name="branshId" Type="Int32" />
+          <Property Name="BranchName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="inv_count" Type="Int32" />
+          <Property Name="running_feadback" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="SellerRin" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Sales_Tbl">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="TeleponeNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WhatsAppSendMsgStatus" Type="Int32" />
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WhatsAppSendMsgTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="TblAssignComp">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="Comp_TAX_No" Type="Int32" />
+          <Property Name="Group_RecordID" Type="Int32" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AuthenticationRequired" Type="Int32" />
+          <Property Name="Com_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblAssignFunction">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="Group_RecordID" Type="Int32" />
+          <Property Name="Function_RecordID" Type="Int32" />
+          <Property Name="AuthenticationRequired" Type="Int32" />
+          <Property Name="TableName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="TblAssignGroup">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="User_RecordID" Type="Int32" />
+          <Property Name="Group_RecordID" Type="Int32" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AuthenticationRequired" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblAttachedFile">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FileName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Editor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblDeal">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="MOBILE" Type="Int32" />
+          <Property Name="OVD" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DEAL_DATE" Type="DateTime" Precision="3" />
+          <Property Name="NEW_EMI_DATE" Type="DateTime" Precision="3" />
+          <Property Name="DEAL_AMOUNT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DEPOSIT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="NEW_EMI" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="C1ST_MONTH" Type="DateTime" Precision="3" />
+          <Property Name="TENOR" Type="Int32" />
+          <Property Name="WAIVED_AMOUNT" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ACTION_TRUE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="LEGAL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="LETTER" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CALL_RECORDED_TIME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EXT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="AGENCY" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="OFFICER" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="NOTES" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="user_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Time" Type="DateTime" Precision="3" />
+          <Property Name="ACC" Type="Int32" />
+          <Property Name="ID" Type="Int32" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CUSTOMER" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblError">
+          <Key>
+            <PropertyRef Name="Record_ID" />
+          </Key>
+          <Property Name="Record_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="Error" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Msg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblFunction">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="FunctionName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AuthenticationRequired" Type="Int32" />
+          <Property Name="Perm" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblGroup">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="GroupName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AuthenticationRequired" Type="Int32" />
+          <Property Name="Status" Type="Byte" />
+          <Property Name="MainGroup_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblLoginType">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="LoginType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AuthenticationRequired" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblPasswordHistory">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="User_RecordID" Type="Int32" />
+          <Property Name="TimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="TblUser">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="UserName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="UserAccount" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="LoginType" Type="Int32" />
+          <Property Name="AccountIsDisabled" Type="Int32" />
+          <Property Name="AccountsIsLockedOut" Type="Int32" />
+          <Property Name="LoginState" Type="Int32" />
+          <Property Name="AuthenticationRequired" Type="Int32" />
+          <Property Name="Manager_RecordID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Branch_RecordID" Type="Int32" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LastPasswordUpdate" Type="DateTime" Precision="3" />
+          <Property Name="PasswordNeverExpires" Type="Int32" />
+          <Property Name="UserCannotChangePassword" Type="Int32" />
+          <Property Name="UserMustChangePasswordAtNextLogon" Type="Int32" />
+          <Property Name="Editor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Byte" />
+          <Property Name="Role" Type="Int32" />
+          <Property Name="ComID" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="Scopos_Customers_DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="branch_tbl" EntityType="Self.branch_tbl" />
+          <EntitySet Name="branshs_log_tbl" EntityType="Self.branshs_log_tbl" />
+          <EntitySet Name="Category_Tbl" EntityType="Self.Category_Tbl" />
+          <EntitySet Name="Com_Tbl" EntityType="Self.Com_Tbl" />
+          <EntitySet Name="Currency_Tbl" EntityType="Self.Currency_Tbl" />
+          <EntitySet Name="Cus_Tbl" EntityType="Self.Cus_Tbl" />
+          <EntitySet Name="dbo_Scopos_error_log_tbl" EntityType="Self.dbo_Scopos_error_log_tbl" />
+          <EntitySet Name="Department_Tbl" EntityType="Self.Department_Tbl" />
+          <EntitySet Name="ETA_document_Tbl" EntityType="Self.ETA_document_Tbl" />
+          <EntitySet Name="Integrate_setup_tbl_New" EntityType="Self.Integrate_setup_tbl_New" />
+          <EntitySet Name="LicenseTbls" EntityType="Self.LicenseTbl" />
+          <EntitySet Name="Measurement_Units_Tbl" EntityType="Self.Measurement_Units_Tbl" />
+          <EntitySet Name="MyContact_tbl" EntityType="Self.MyContact_tbl" />
+          <EntitySet Name="Names_Translation_Tbl" EntityType="Self.Names_Translation_Tbl" />
+          <EntitySet Name="Payment_Point_Tbl" EntityType="Self.Payment_Point_Tbl" />
+          <EntitySet Name="PosMachin_tbl" EntityType="Self.PosMachin_tbl" />
+          <EntitySet Name="Registeration_Request_Tbl" EntityType="Self.Registeration_Request_Tbl" />
+          <EntitySet Name="RunningLog_tbl" EntityType="Self.RunningLog_tbl" />
+          <EntitySet Name="Sales_Tbl" EntityType="Self.Sales_Tbl" />
+          <EntitySet Name="TblAssignComps" EntityType="Self.TblAssignComp" />
+          <EntitySet Name="TblAssignFunctions" EntityType="Self.TblAssignFunction" />
+          <EntitySet Name="TblAssignGroups" EntityType="Self.TblAssignGroup" />
+          <EntitySet Name="TblAttachedFiles" EntityType="Self.TblAttachedFile" />
+          <EntitySet Name="TblDeals" EntityType="Self.TblDeal" />
+          <EntitySet Name="TblErrors" EntityType="Self.TblError" />
+          <EntitySet Name="TblFunctions" EntityType="Self.TblFunction" />
+          <EntitySet Name="TblGroups" EntityType="Self.TblGroup" />
+          <EntitySet Name="TblLoginTypes" EntityType="Self.TblLoginType" />
+          <EntitySet Name="TblPasswordHistories" EntityType="Self.TblPasswordHistory" />
+          <EntitySet Name="TblUsers" EntityType="Self.TblUser" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Scopos_Customers_DBModelStoreContainer" CdmEntityContainer="Scopos_Customers_DBEntities">
+          <EntitySetMapping Name="branch_tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.branch_tbl">
+              <MappingFragment StoreEntitySet="branch_tbl">
+                <ScalarProperty Name="ReceiptNumberColumnName" ColumnName="ReceiptNumberColumnName" />
+                <ScalarProperty Name="ResponseTableName" ColumnName="ResponseTableName" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="ComID" ColumnName="ComID" />
+                <ScalarProperty Name="branchID" ColumnName="branchID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="governate" ColumnName="governate" />
+                <ScalarProperty Name="regionCity" ColumnName="regionCity" />
+                <ScalarProperty Name="street" ColumnName="street" />
+                <ScalarProperty Name="buildingNumber" ColumnName="buildingNumber" />
+                <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+                <ScalarProperty Name="floor" ColumnName="floor" />
+                <ScalarProperty Name="room" ColumnName="room" />
+                <ScalarProperty Name="landmark" ColumnName="landmark" />
+                <ScalarProperty Name="additionalInformation" ColumnName="additionalInformation" />
+                <ScalarProperty Name="mailFrom" ColumnName="mailFrom" />
+                <ScalarProperty Name="sendrPassword" ColumnName="sendrPassword" />
+                <ScalarProperty Name="maillTo" ColumnName="maillTo" />
+                <ScalarProperty Name="Smtp_Server_Port" ColumnName="Smtp_Server_Port" />
+                <ScalarProperty Name="Smtp_Server_Host" ColumnName="Smtp_Server_Host" />
+                <ScalarProperty Name="databaseConnGet" ColumnName="databaseConnGet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="branshs_log_tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.branshs_log_tbl">
+              <MappingFragment StoreEntitySet="branshs_log_tbl">
+                <ScalarProperty Name="Recourd_Id" ColumnName="Recourd_Id" />
+                <ScalarProperty Name="ReceiptNumber" ColumnName="ReceiptNumber" />
+                <ScalarProperty Name="ReceiptType" ColumnName="ReceiptType" />
+                <ScalarProperty Name="transferDate" ColumnName="transferDate" />
+                <ScalarProperty Name="Response" ColumnName="Response" />
+                <ScalarProperty Name="uuid" ColumnName="uuid" />
+                <ScalarProperty Name="PreviousUuid" ColumnName="PreviousUuid" />
+                <ScalarProperty Name="ReferenceOldUuid" ColumnName="ReferenceOldUuid" />
+                <ScalarProperty Name="sendToETA" ColumnName="sendToETA" />
+                <ScalarProperty Name="validation" ColumnName="validation" />
+                <ScalarProperty Name="submissionUuid" ColumnName="submissionUuid" />
+                <ScalarProperty Name="branshId" ColumnName="branshId" />
+                <ScalarProperty Name="COMID" ColumnName="COMID" />
+                <ScalarProperty Name="posserial" ColumnName="posserial" />
+                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+                <ScalarProperty Name="edit_date" ColumnName="edit_date" />
+                <ScalarProperty Name="ReceiptNumberAsNumber" ColumnName="ReceiptNumberAsNumber" />
+                <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Category_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Category_Tbl">
+              <MappingFragment StoreEntitySet="Category_Tbl">
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="Editor" ColumnName="Editor" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Com_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Com_Tbl">
+              <MappingFragment StoreEntitySet="Com_Tbl">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="branchID" ColumnName="branchID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="governate" ColumnName="governate" />
+                <ScalarProperty Name="regionCity" ColumnName="regionCity" />
+                <ScalarProperty Name="street" ColumnName="street" />
+                <ScalarProperty Name="buildingNumber" ColumnName="buildingNumber" />
+                <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+                <ScalarProperty Name="floor" ColumnName="floor" />
+                <ScalarProperty Name="room" ColumnName="room" />
+                <ScalarProperty Name="landmark" ColumnName="landmark" />
+                <ScalarProperty Name="additionalInformation" ColumnName="additionalInformation" />
+                <ScalarProperty Name="taxpayerActivityCode" ColumnName="taxpayerActivityCode" />
+                <ScalarProperty Name="Recourd_ID" ColumnName="Recourd_ID" />
+                <ScalarProperty Name="RunType" ColumnName="RunType" />
+                <ScalarProperty Name="ArrangeWorkTimes" ColumnName="ArrangeWorkTimes" />
+                <ScalarProperty Name="NextRunTime" ColumnName="NextRunTime" />
+                <ScalarProperty Name="RunStutes" ColumnName="RunStutes" />
+                <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+                <ScalarProperty Name="editor" ColumnName="editor" />
+                <ScalarProperty Name="dashboardConnGet" ColumnName="dashboardConnGet" />
+                <ScalarProperty Name="TypeVersion" ColumnName="TypeVersion" />
+                <ScalarProperty Name="SendToEtaWay" ColumnName="SendToEtaWay" />
+                <ScalarProperty Name="ItemFlag" ColumnName="ItemFlag" />
+                <ScalarProperty Name="PriceFlag" ColumnName="PriceFlag" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Currency_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Currency_Tbl">
+              <MappingFragment StoreEntitySet="Currency_Tbl">
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="currencyExchangeRate" ColumnName="currencyExchangeRate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cus_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Cus_Tbl">
+              <MappingFragment StoreEntitySet="Cus_Tbl">
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+                <ScalarProperty Name="Telephone1" ColumnName="Telephone1" />
+                <ScalarProperty Name="TaxRegistration" ColumnName="TaxRegistration" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="Editor" ColumnName="Editor" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="SalesContact" ColumnName="SalesContact" />
+                <ScalarProperty Name="SalesContact_ID" ColumnName="SalesContact_ID" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="governate" ColumnName="governate" />
+                <ScalarProperty Name="regionCity" ColumnName="regionCity" />
+                <ScalarProperty Name="street" ColumnName="street" />
+                <ScalarProperty Name="buildingNumber" ColumnName="buildingNumber" />
+                <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+                <ScalarProperty Name="floor" ColumnName="floor" />
+                <ScalarProperty Name="room" ColumnName="room" />
+                <ScalarProperty Name="landmark" ColumnName="landmark" />
+                <ScalarProperty Name="additionalInformation" ColumnName="additionalInformation" />
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dbo_Scopos_error_log_tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.dbo_Scopos_error_log_tbl">
+              <MappingFragment StoreEntitySet="dbo_Scopos_error_log_tbl">
+                <ScalarProperty Name="Record_Id" ColumnName="Record_Id" />
+                <ScalarProperty Name="ReceiptNumber" ColumnName="ReceiptNumber" />
+                <ScalarProperty Name="uuid" ColumnName="uuid" />
+                <ScalarProperty Name="message" ColumnName="message" />
+                <ScalarProperty Name="target" ColumnName="target" />
+                <ScalarProperty Name="Response" ColumnName="Response" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Department_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Department_Tbl">
+              <MappingFragment StoreEntitySet="Department_Tbl">
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="Editor" ColumnName="Editor" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="branchID" ColumnName="branchID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ETA_document_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.ETA_document_Tbl">
+              <MappingFragment StoreEntitySet="ETA_document_Tbl">
+                <ScalarProperty Name="Com_TAX_No" ColumnName="Com_TAX_No" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Environment_ID" ColumnName="Environment_ID" />
+                <ScalarProperty Name="Environment" ColumnName="Environment" />
+                <ScalarProperty Name="documentTypeVersion" ColumnName="documentTypeVersion" />
+                <ScalarProperty Name="documentType" ColumnName="documentType" />
+                <ScalarProperty Name="Login_URL" ColumnName="Login_URL" />
+                <ScalarProperty Name="client_id" ColumnName="client_id" />
+                <ScalarProperty Name="client_secret" ColumnName="client_secret" />
+                <ScalarProperty Name="client_secret_2" ColumnName="client_secret_2" />
+                <ScalarProperty Name="TokenPin" ColumnName="TokenPin" />
+                <ScalarProperty Name="DocumentSubmissions_URL" ColumnName="DocumentSubmissions_URL" />
+                <ScalarProperty Name="Recourd_Id" ColumnName="Recourd_Id" />
+                <ScalarProperty Name="TokenCompny" ColumnName="TokenCompny" />
+                <ScalarProperty Name="editor" ColumnName="editor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Integrate_setup_tbl_New">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Integrate_setup_tbl_New">
+              <MappingFragment StoreEntitySet="Integrate_setup_tbl_New">
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="Com_Tax_No" ColumnName="Com_Tax_No" />
+                <ScalarProperty Name="DataSourceType" ColumnName="DataSourceType" />
+                <ScalarProperty Name="DataResponseType" ColumnName="DataResponseType" />
+                <ScalarProperty Name="InsertResponse" ColumnName="InsertResponse" />
+                <ScalarProperty Name="ExelFilePath" ColumnName="ExelFilePath" />
+                <ScalarProperty Name="ExelFileBackupPath" ColumnName="ExelFileBackupPath" />
+                <ScalarProperty Name="ExelFileName" ColumnName="ExelFileName" />
+                <ScalarProperty Name="ExelTabName" ColumnName="ExelTabName" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="fillGV" ColumnName="fillGV" />
+                <ScalarProperty Name="FillDashboard" ColumnName="FillDashboard" />
+                <ScalarProperty Name="SearchInvent_1" ColumnName="SearchInvent_1" />
+                <ScalarProperty Name="SearchInvent_2" ColumnName="SearchInvent_2" />
+                <ScalarProperty Name="SetResponse_TableName" ColumnName="SetResponse_TableName" />
+                <ScalarProperty Name="SetResponse_Response_ColName" ColumnName="SetResponse_Response_ColName" />
+                <ScalarProperty Name="SetResponse_validation_ColName" ColumnName="SetResponse_validation_ColName" />
+                <ScalarProperty Name="SetResponse_sendToetaStatus_ColName" ColumnName="SetResponse_sendToetaStatus_ColName" />
+                <ScalarProperty Name="SetResponse_sendToetaDate_ColName" ColumnName="SetResponse_sendToetaDate_ColName" />
+                <ScalarProperty Name="SetResponse_InvNo_ColName" ColumnName="SetResponse_InvNo_ColName" />
+                <ScalarProperty Name="SetResponse_RecourdID_ColName" ColumnName="SetResponse_RecourdID_ColName" />
+                <ScalarProperty Name="DataSourceQuery_H_Re_Submit_Issues" ColumnName="DataSourceQuery_H_Re_Submit_Issues" />
+                <ScalarProperty Name="DataSourceQuery_H" ColumnName="DataSourceQuery_H" />
+                <ScalarProperty Name="DataSourceQuery_D" ColumnName="DataSourceQuery_D" />
+                <ScalarProperty Name="InsertResponseQuery" ColumnName="InsertResponseQuery" />
+                <ScalarProperty Name="GetAllValid_Query" ColumnName="GetAllValid_Query" />
+                <ScalarProperty Name="GetAllInValid_Query" ColumnName="GetAllInValid_Query" />
+                <ScalarProperty Name="GetAllSubmet_Query" ColumnName="GetAllSubmet_Query" />
+                <ScalarProperty Name="GetAllUnSubmet_Query" ColumnName="GetAllUnSubmet_Query" />
+                <ScalarProperty Name="GetAllUnCanceld_Query" ColumnName="GetAllUnCanceld_Query" />
+                <ScalarProperty Name="GetAllUnReject_Query" ColumnName="GetAllUnReject_Query" />
+                <ScalarProperty Name="FillDashPord" ColumnName="FillDashPord" />
+                <ScalarProperty Name="Linlk_H_With_D_By_ColName" ColumnName="Linlk_H_With_D_By_ColName" />
+                <ScalarProperty Name="GetReportSales" ColumnName="GetReportSales" />
+                <ScalarProperty Name="GetReportPurchases" ColumnName="GetReportPurchases" />
+                <ScalarProperty Name="Select_Coll_29" ColumnName="Select_Coll_29" />
+                <ScalarProperty Name="Select_Coll_30" ColumnName="Select_Coll_30" />
+                <ScalarProperty Name="Select_Coll_31" ColumnName="Select_Coll_31" />
+                <ScalarProperty Name="Select_Coll_32" ColumnName="Select_Coll_32" />
+                <ScalarProperty Name="Select_Coll_33" ColumnName="Select_Coll_33" />
+                <ScalarProperty Name="Select_Coll_34" ColumnName="Select_Coll_34" />
+                <ScalarProperty Name="Select_Coll_35" ColumnName="Select_Coll_35" />
+                <ScalarProperty Name="Select_Coll_36" ColumnName="Select_Coll_36" />
+                <ScalarProperty Name="Select_Coll_37" ColumnName="Select_Coll_37" />
+                <ScalarProperty Name="Select_Coll_38" ColumnName="Select_Coll_38" />
+                <ScalarProperty Name="Select_Coll_39" ColumnName="Select_Coll_39" />
+                <ScalarProperty Name="Select_Coll_40" ColumnName="Select_Coll_40" />
+                <ScalarProperty Name="editor" ColumnName="editor" />
+                <ScalarProperty Name="SetResponseDB" ColumnName="SetResponseDB" />
+                <ScalarProperty Name="DataSource_Conn" ColumnName="DataSource_Conn" />
+                <ScalarProperty Name="CallApi_URL" ColumnName="CallApi_URL" />
+                <ScalarProperty Name="CallApi_CONSUMERKEY" ColumnName="CallApi_CONSUMERKEY" />
+                <ScalarProperty Name="CallApi_CONSUMERSECRET" ColumnName="CallApi_CONSUMERSECRET" />
+                <ScalarProperty Name="CallApi_TOKENKEY" ColumnName="CallApi_TOKENKEY" />
+                <ScalarProperty Name="CallApi_TOKENSECRET" ColumnName="CallApi_TOKENSECRET" />
+                <ScalarProperty Name="CallApi_Realm" ColumnName="CallApi_Realm" />
+                <ScalarProperty Name="CallApi_script" ColumnName="CallApi_script" />
+                <ScalarProperty Name="CallApi_deploy" ColumnName="CallApi_deploy" />
+                <ScalarProperty Name="CallApi_ComID" ColumnName="CallApi_ComID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LicenseTbls">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.LicenseTbl">
+              <MappingFragment StoreEntitySet="LicenseTbl">
+                <ScalarProperty Name="Recourd_ID" ColumnName="Recourd_ID" />
+                <ScalarProperty Name="ComName" ColumnName="ComName" />
+                <ScalarProperty Name="TaxNumber" ColumnName="TaxNumber" />
+                <ScalarProperty Name="DBName" ColumnName="DBName" />
+                <ScalarProperty Name="DBAccount" ColumnName="DBAccount" />
+                <ScalarProperty Name="DBPassword" ColumnName="DBPassword" />
+                <ScalarProperty Name="SetteingDBNAME" ColumnName="SetteingDBNAME" />
+                <ScalarProperty Name="Conn" ColumnName="Conn" />
+                <ScalarProperty Name="Logger" ColumnName="Logger" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Measurement_Units_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Measurement_Units_Tbl">
+              <MappingFragment StoreEntitySet="Measurement_Units_Tbl">
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="Measurement_Units" ColumnName="Measurement_Units" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MyContact_tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.MyContact_tbl">
+              <MappingFragment StoreEntitySet="MyContact_tbl">
+                <ScalarProperty Name="TeleponeNumber" ColumnName="TeleponeNumber" />
+                <ScalarProperty Name="WhatsAppSendMsgStatus" ColumnName="WhatsAppSendMsgStatus" />
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="WhatsAppSendMsgTime" ColumnName="WhatsAppSendMsgTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Names_Translation_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Names_Translation_Tbl">
+              <MappingFragment StoreEntitySet="Names_Translation_Tbl">
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="Arabic" ColumnName="Arabic" />
+                <ScalarProperty Name="English" ColumnName="English" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Payment_Point_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Payment_Point_Tbl">
+              <MappingFragment StoreEntitySet="Payment_Point_Tbl">
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="ActualAmount" ColumnName="ActualAmount" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+                <ScalarProperty Name="Editor" ColumnName="Editor" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+                <ScalarProperty Name="SettlementType" ColumnName="SettlementType" />
+                <ScalarProperty Name="BillNo" ColumnName="BillNo" />
+                <ScalarProperty Name="CheckDetails" ColumnName="CheckDetails" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="CollectionPeriod" ColumnName="CollectionPeriod" />
+                <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="SupplyExpenses" ColumnName="SupplyExpenses" />
+                <ScalarProperty Name="Other" ColumnName="Other" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PosMachin_tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.PosMachin_tbl">
+              <MappingFragment StoreEntitySet="PosMachin_tbl">
+                <ScalarProperty Name="comid" ColumnName="comid" />
+                <ScalarProperty Name="branchID" ColumnName="branchID" />
+                <ScalarProperty Name="POS_id" ColumnName="POS_id" />
+                <ScalarProperty Name="LicenseExpiryDate" ColumnName="LicenseExpiryDate" />
+                <ScalarProperty Name="POSName" ColumnName="POSName" />
+                <ScalarProperty Name="posserial" ColumnName="posserial" />
+                <ScalarProperty Name="clintId" ColumnName="clintId" />
+                <ScalarProperty Name="scId" ColumnName="scId" />
+                <ScalarProperty Name="pososversion" ColumnName="pososversion" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="ENVIRONMENT" ColumnName="ENVIRONMENT" />
+                <ScalarProperty Name="AndroidID" ColumnName="AndroidID" />
+                <ScalarProperty Name="licenseStatus" ColumnName="licenseStatus" />
+                <ScalarProperty Name="databaseConnGet" ColumnName="databaseConnGet" />
+                <ScalarProperty Name="databaseConnSet" ColumnName="databaseConnSet" />
+                <ScalarProperty Name="DBSetType" ColumnName="DBSetType" />
+                <ScalarProperty Name="DBGetType" ColumnName="DBGetType" />
+                <ScalarProperty Name="LastRunning" ColumnName="LastRunning" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Registeration_Request_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Registeration_Request_Tbl">
+              <MappingFragment StoreEntitySet="Registeration_Request_Tbl">
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="AndroidID" ColumnName="AndroidID" />
+                <ScalarProperty Name="PosSerial" ColumnName="PosSerial" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ComID" ColumnName="ComID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RunningLog_tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.RunningLog_tbl">
+              <MappingFragment StoreEntitySet="RunningLog_tbl">
+                <ScalarProperty Name="Record_Id" ColumnName="Record_Id" />
+                <ScalarProperty Name="running_time" ColumnName="running_time" />
+                <ScalarProperty Name="branshId" ColumnName="branshId" />
+                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+                <ScalarProperty Name="inv_count" ColumnName="inv_count" />
+                <ScalarProperty Name="running_feadback" ColumnName="running_feadback" />
+                <ScalarProperty Name="SellerRin" ColumnName="SellerRin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sales_Tbl">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Sales_Tbl">
+              <MappingFragment StoreEntitySet="Sales_Tbl">
+                <ScalarProperty Name="TeleponeNumber" ColumnName="TeleponeNumber" />
+                <ScalarProperty Name="WhatsAppSendMsgStatus" ColumnName="WhatsAppSendMsgStatus" />
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="WhatsAppSendMsgTime" ColumnName="WhatsAppSendMsgTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAssignComps">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblAssignComp">
+              <MappingFragment StoreEntitySet="TblAssignComp">
+                <ScalarProperty Name="Comp_TAX_No" ColumnName="Comp_TAX_No" />
+                <ScalarProperty Name="Group_RecordID" ColumnName="Group_RecordID" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+                <ScalarProperty Name="Com_ID" ColumnName="Com_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAssignFunctions">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblAssignFunction">
+              <MappingFragment StoreEntitySet="TblAssignFunctions">
+                <ScalarProperty Name="Group_RecordID" ColumnName="Group_RecordID" />
+                <ScalarProperty Name="Function_RecordID" ColumnName="Function_RecordID" />
+                <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAssignGroups">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblAssignGroup">
+              <MappingFragment StoreEntitySet="TblAssignGroup">
+                <ScalarProperty Name="User_RecordID" ColumnName="User_RecordID" />
+                <ScalarProperty Name="Group_RecordID" ColumnName="Group_RecordID" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAttachedFiles">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblAttachedFile">
+              <MappingFragment StoreEntitySet="TblAttachedFiles">
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="Editor" ColumnName="Editor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblDeals">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblDeal">
+              <MappingFragment StoreEntitySet="TblDeals">
+                <ScalarProperty Name="MOBILE" ColumnName="MOBILE" />
+                <ScalarProperty Name="OVD" ColumnName="OVD" />
+                <ScalarProperty Name="DEAL_DATE" ColumnName="DEAL_DATE" />
+                <ScalarProperty Name="NEW_EMI_DATE" ColumnName="NEW_EMI_DATE" />
+                <ScalarProperty Name="DEAL_AMOUNT" ColumnName="DEAL_AMOUNT" />
+                <ScalarProperty Name="DEPOSIT" ColumnName="DEPOSIT" />
+                <ScalarProperty Name="NEW_EMI" ColumnName="NEW_EMI" />
+                <ScalarProperty Name="C1ST_MONTH" ColumnName="1ST_MONTH" />
+                <ScalarProperty Name="TENOR" ColumnName="TENOR" />
+                <ScalarProperty Name="WAIVED_AMOUNT" ColumnName="WAIVED_AMOUNT" />
+                <ScalarProperty Name="ACTION_TRUE" ColumnName="ACTION_TRUE" />
+                <ScalarProperty Name="LEGAL" ColumnName="LEGAL" />
+                <ScalarProperty Name="LETTER" ColumnName="LETTER" />
+                <ScalarProperty Name="CALL_RECORDED_TIME" ColumnName="CALL_RECORDED_TIME" />
+                <ScalarProperty Name="EXT" ColumnName="EXT" />
+                <ScalarProperty Name="AGENCY" ColumnName="AGENCY" />
+                <ScalarProperty Name="OFFICER" ColumnName="OFFICER" />
+                <ScalarProperty Name="NOTES" ColumnName="NOTES" />
+                <ScalarProperty Name="user_name" ColumnName="user_name" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="ACC" ColumnName="ACC" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="CUSTOMER" ColumnName="CUSTOMER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblErrors">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblError">
+              <MappingFragment StoreEntitySet="TblError">
+                <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Error" ColumnName="Error" />
+                <ScalarProperty Name="Msg" ColumnName="Msg" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblFunctions">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblFunction">
+              <MappingFragment StoreEntitySet="TblFunctions">
+                <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+                <ScalarProperty Name="Perm" ColumnName="Perm" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblGroups">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblGroup">
+              <MappingFragment StoreEntitySet="TblGroups">
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="MainGroup_ID" ColumnName="MainGroup_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblLoginTypes">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblLoginType">
+              <MappingFragment StoreEntitySet="TblLoginType">
+                <ScalarProperty Name="LoginType" ColumnName="LoginType" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblPasswordHistories">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblPasswordHistory">
+              <MappingFragment StoreEntitySet="TblPasswordHistory">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="User_RecordID" ColumnName="User_RecordID" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblUsers">
+            <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblUser">
+              <MappingFragment StoreEntitySet="TblUsers">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserAccount" ColumnName="UserAccount" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="LoginType" ColumnName="LoginType" />
+                <ScalarProperty Name="AccountIsDisabled" ColumnName="AccountIsDisabled" />
+                <ScalarProperty Name="AccountsIsLockedOut" ColumnName="AccountsIsLockedOut" />
+                <ScalarProperty Name="LoginState" ColumnName="LoginState" />
+                <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+                <ScalarProperty Name="Manager_RecordID" ColumnName="Manager_RecordID" />
+                <ScalarProperty Name="Branch_RecordID" ColumnName="Branch_RecordID" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="LastPasswordUpdate" ColumnName="LastPasswordUpdate" />
+                <ScalarProperty Name="PasswordNeverExpires" ColumnName="PasswordNeverExpires" />
+                <ScalarProperty Name="UserCannotChangePassword" ColumnName="UserCannotChangePassword" />
+                <ScalarProperty Name="UserMustChangePasswordAtNextLogon" ColumnName="UserMustChangePasswordAtNextLogon" />
+                <ScalarProperty Name="Editor" ColumnName="Editor" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="ComID" ColumnName="ComID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

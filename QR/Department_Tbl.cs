@@ -12,9 +12,13 @@ namespace QR
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class Department_Tbl
     {
-        public string UserName { get; set; }
-        public string Password { get; set; }
+        public int Record_ID { get; set; }
+        public string Department { get; set; }
+        public string Editor { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
+        public Nullable<byte> status { get; set; }
+        public Nullable<int> branchID { get; set; }
     }
 }

@@ -6,11 +6,12 @@ namespace QR.Models
 {
     public class UserSecurity
     {
-        public static bool login(string username, string password)
+        public static bool login(string comTaxNO, string comPassword)
         {
-            using(QR.APIAuthEntities db = new APIAuthEntities())
+            using(QR.Scopos_Customers_DBEntities db = new Scopos_Customers_DBEntities())
             {
-                return db.Users.Any(u => u.UserName.Equals(username, StringComparison.OrdinalIgnoreCase) && u.Password == password);
+                int comTax = int.Parse(comTaxNO);
+                return db.Com_Tbl.Any(u => u.id == comTax && u.Password == comPassword);
             }
         }
     }
