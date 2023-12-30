@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Scopos_Customers_DBModelStoreContainer" CdmEntityContainer="Scopos_Customers_DBEntities">
+    <EntitySetMapping Name="branch_tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.branch_tbl">
+        <MappingFragment StoreEntitySet="branch_tbl">
+          <ScalarProperty Name="ReceiptNumberColumnName" ColumnName="ReceiptNumberColumnName" />
+          <ScalarProperty Name="ResponseTableName" ColumnName="ResponseTableName" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="governate" ColumnName="governate" />
+          <ScalarProperty Name="regionCity" ColumnName="regionCity" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="buildingNumber" ColumnName="buildingNumber" />
+          <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="landmark" ColumnName="landmark" />
+          <ScalarProperty Name="additionalInformation" ColumnName="additionalInformation" />
+          <ScalarProperty Name="mailFrom" ColumnName="mailFrom" />
+          <ScalarProperty Name="sendrPassword" ColumnName="sendrPassword" />
+          <ScalarProperty Name="maillTo" ColumnName="maillTo" />
+          <ScalarProperty Name="Smtp_Server_Port" ColumnName="Smtp_Server_Port" />
+          <ScalarProperty Name="Smtp_Server_Host" ColumnName="Smtp_Server_Host" />
+          <ScalarProperty Name="databaseConnGet" ColumnName="databaseConnGet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="branshs_log_tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.branshs_log_tbl">
+        <MappingFragment StoreEntitySet="branshs_log_tbl">
+          <ScalarProperty Name="Recourd_Id" ColumnName="Recourd_Id" />
+          <ScalarProperty Name="ReceiptNumber" ColumnName="ReceiptNumber" />
+          <ScalarProperty Name="ReceiptType" ColumnName="ReceiptType" />
+          <ScalarProperty Name="transferDate" ColumnName="transferDate" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="uuid" ColumnName="uuid" />
+          <ScalarProperty Name="PreviousUuid" ColumnName="PreviousUuid" />
+          <ScalarProperty Name="ReferenceOldUuid" ColumnName="ReferenceOldUuid" />
+          <ScalarProperty Name="sendToETA" ColumnName="sendToETA" />
+          <ScalarProperty Name="validation" ColumnName="validation" />
+          <ScalarProperty Name="submissionUuid" ColumnName="submissionUuid" />
+          <ScalarProperty Name="branshId" ColumnName="branshId" />
+          <ScalarProperty Name="COMID" ColumnName="COMID" />
+          <ScalarProperty Name="posserial" ColumnName="posserial" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="edit_date" ColumnName="edit_date" />
+          <ScalarProperty Name="ReceiptNumberAsNumber" ColumnName="ReceiptNumberAsNumber" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Category_Tbl">
+        <MappingFragment StoreEntitySet="Category_Tbl">
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Com_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Com_Tbl">
+        <MappingFragment StoreEntitySet="Com_Tbl">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="governate" ColumnName="governate" />
+          <ScalarProperty Name="regionCity" ColumnName="regionCity" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="buildingNumber" ColumnName="buildingNumber" />
+          <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="landmark" ColumnName="landmark" />
+          <ScalarProperty Name="additionalInformation" ColumnName="additionalInformation" />
+          <ScalarProperty Name="taxpayerActivityCode" ColumnName="taxpayerActivityCode" />
+          <ScalarProperty Name="Recourd_ID" ColumnName="Recourd_ID" />
+          <ScalarProperty Name="RunType" ColumnName="RunType" />
+          <ScalarProperty Name="ArrangeWorkTimes" ColumnName="ArrangeWorkTimes" />
+          <ScalarProperty Name="NextRunTime" ColumnName="NextRunTime" />
+          <ScalarProperty Name="RunStutes" ColumnName="RunStutes" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="editor" ColumnName="editor" />
+          <ScalarProperty Name="dashboardConnGet" ColumnName="dashboardConnGet" />
+          <ScalarProperty Name="TypeVersion" ColumnName="TypeVersion" />
+          <ScalarProperty Name="SendToEtaWay" ColumnName="SendToEtaWay" />
+          <ScalarProperty Name="ItemFlag" ColumnName="ItemFlag" />
+          <ScalarProperty Name="PriceFlag" ColumnName="PriceFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currency_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Currency_Tbl">
+        <MappingFragment StoreEntitySet="Currency_Tbl">
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="currencyExchangeRate" ColumnName="currencyExchangeRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cus_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Cus_Tbl">
+        <MappingFragment StoreEntitySet="Cus_Tbl">
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Telephone1" ColumnName="Telephone1" />
+          <ScalarProperty Name="TaxRegistration" ColumnName="TaxRegistration" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="SalesContact" ColumnName="SalesContact" />
+          <ScalarProperty Name="SalesContact_ID" ColumnName="SalesContact_ID" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="governate" ColumnName="governate" />
+          <ScalarProperty Name="regionCity" ColumnName="regionCity" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="buildingNumber" ColumnName="buildingNumber" />
+          <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="landmark" ColumnName="landmark" />
+          <ScalarProperty Name="additionalInformation" ColumnName="additionalInformation" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbo_Scopos_error_log_tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.dbo_Scopos_error_log_tbl">
+        <MappingFragment StoreEntitySet="dbo_Scopos_error_log_tbl">
+          <ScalarProperty Name="Record_Id" ColumnName="Record_Id" />
+          <ScalarProperty Name="ReceiptNumber" ColumnName="ReceiptNumber" />
+          <ScalarProperty Name="uuid" ColumnName="uuid" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="target" ColumnName="target" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Department_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Department_Tbl">
+        <MappingFragment StoreEntitySet="Department_Tbl">
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ETA_document_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.ETA_document_Tbl">
+        <MappingFragment StoreEntitySet="ETA_document_Tbl">
+          <ScalarProperty Name="Com_TAX_No" ColumnName="Com_TAX_No" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Environment_ID" ColumnName="Environment_ID" />
+          <ScalarProperty Name="Environment" ColumnName="Environment" />
+          <ScalarProperty Name="documentTypeVersion" ColumnName="documentTypeVersion" />
+          <ScalarProperty Name="documentType" ColumnName="documentType" />
+          <ScalarProperty Name="Login_URL" ColumnName="Login_URL" />
+          <ScalarProperty Name="client_id" ColumnName="client_id" />
+          <ScalarProperty Name="client_secret" ColumnName="client_secret" />
+          <ScalarProperty Name="client_secret_2" ColumnName="client_secret_2" />
+          <ScalarProperty Name="TokenPin" ColumnName="TokenPin" />
+          <ScalarProperty Name="DocumentSubmissions_URL" ColumnName="DocumentSubmissions_URL" />
+          <ScalarProperty Name="Recourd_Id" ColumnName="Recourd_Id" />
+          <ScalarProperty Name="TokenCompny" ColumnName="TokenCompny" />
+          <ScalarProperty Name="editor" ColumnName="editor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Integrate_setup_tbl_New">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Integrate_setup_tbl_New">
+        <MappingFragment StoreEntitySet="Integrate_setup_tbl_New">
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="Com_Tax_No" ColumnName="Com_Tax_No" />
+          <ScalarProperty Name="DataSourceType" ColumnName="DataSourceType" />
+          <ScalarProperty Name="DataResponseType" ColumnName="DataResponseType" />
+          <ScalarProperty Name="InsertResponse" ColumnName="InsertResponse" />
+          <ScalarProperty Name="ExelFilePath" ColumnName="ExelFilePath" />
+          <ScalarProperty Name="ExelFileBackupPath" ColumnName="ExelFileBackupPath" />
+          <ScalarProperty Name="ExelFileName" ColumnName="ExelFileName" />
+          <ScalarProperty Name="ExelTabName" ColumnName="ExelTabName" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="fillGV" ColumnName="fillGV" />
+          <ScalarProperty Name="FillDashboard" ColumnName="FillDashboard" />
+          <ScalarProperty Name="SearchInvent_1" ColumnName="SearchInvent_1" />
+          <ScalarProperty Name="SearchInvent_2" ColumnName="SearchInvent_2" />
+          <ScalarProperty Name="SetResponse_TableName" ColumnName="SetResponse_TableName" />
+          <ScalarProperty Name="SetResponse_Response_ColName" ColumnName="SetResponse_Response_ColName" />
+          <ScalarProperty Name="SetResponse_validation_ColName" ColumnName="SetResponse_validation_ColName" />
+          <ScalarProperty Name="SetResponse_sendToetaStatus_ColName" ColumnName="SetResponse_sendToetaStatus_ColName" />
+          <ScalarProperty Name="SetResponse_sendToetaDate_ColName" ColumnName="SetResponse_sendToetaDate_ColName" />
+          <ScalarProperty Name="SetResponse_InvNo_ColName" ColumnName="SetResponse_InvNo_ColName" />
+          <ScalarProperty Name="SetResponse_RecourdID_ColName" ColumnName="SetResponse_RecourdID_ColName" />
+          <ScalarProperty Name="DataSourceQuery_H_Re_Submit_Issues" ColumnName="DataSourceQuery_H_Re_Submit_Issues" />
+          <ScalarProperty Name="DataSourceQuery_H" ColumnName="DataSourceQuery_H" />
+          <ScalarProperty Name="DataSourceQuery_D" ColumnName="DataSourceQuery_D" />
+          <ScalarProperty Name="InsertResponseQuery" ColumnName="InsertResponseQuery" />
+          <ScalarProperty Name="GetAllValid_Query" ColumnName="GetAllValid_Query" />
+          <ScalarProperty Name="GetAllInValid_Query" ColumnName="GetAllInValid_Query" />
+          <ScalarProperty Name="GetAllSubmet_Query" ColumnName="GetAllSubmet_Query" />
+          <ScalarProperty Name="GetAllUnSubmet_Query" ColumnName="GetAllUnSubmet_Query" />
+          <ScalarProperty Name="GetAllUnCanceld_Query" ColumnName="GetAllUnCanceld_Query" />
+          <ScalarProperty Name="GetAllUnReject_Query" ColumnName="GetAllUnReject_Query" />
+          <ScalarProperty Name="FillDashPord" ColumnName="FillDashPord" />
+          <ScalarProperty Name="Linlk_H_With_D_By_ColName" ColumnName="Linlk_H_With_D_By_ColName" />
+          <ScalarProperty Name="GetReportSales" ColumnName="GetReportSales" />
+          <ScalarProperty Name="GetReportPurchases" ColumnName="GetReportPurchases" />
+          <ScalarProperty Name="Select_Coll_29" ColumnName="Select_Coll_29" />
+          <ScalarProperty Name="Select_Coll_30" ColumnName="Select_Coll_30" />
+          <ScalarProperty Name="Select_Coll_31" ColumnName="Select_Coll_31" />
+          <ScalarProperty Name="Select_Coll_32" ColumnName="Select_Coll_32" />
+          <ScalarProperty Name="Select_Coll_33" ColumnName="Select_Coll_33" />
+          <ScalarProperty Name="Select_Coll_34" ColumnName="Select_Coll_34" />
+          <ScalarProperty Name="Select_Coll_35" ColumnName="Select_Coll_35" />
+          <ScalarProperty Name="Select_Coll_36" ColumnName="Select_Coll_36" />
+          <ScalarProperty Name="Select_Coll_37" ColumnName="Select_Coll_37" />
+          <ScalarProperty Name="Select_Coll_38" ColumnName="Select_Coll_38" />
+          <ScalarProperty Name="Select_Coll_39" ColumnName="Select_Coll_39" />
+          <ScalarProperty Name="Select_Coll_40" ColumnName="Select_Coll_40" />
+          <ScalarProperty Name="editor" ColumnName="editor" />
+          <ScalarProperty Name="SetResponseDB" ColumnName="SetResponseDB" />
+          <ScalarProperty Name="DataSource_Conn" ColumnName="DataSource_Conn" />
+          <ScalarProperty Name="CallApi_URL" ColumnName="CallApi_URL" />
+          <ScalarProperty Name="CallApi_CONSUMERKEY" ColumnName="CallApi_CONSUMERKEY" />
+          <ScalarProperty Name="CallApi_CONSUMERSECRET" ColumnName="CallApi_CONSUMERSECRET" />
+          <ScalarProperty Name="CallApi_TOKENKEY" ColumnName="CallApi_TOKENKEY" />
+          <ScalarProperty Name="CallApi_TOKENSECRET" ColumnName="CallApi_TOKENSECRET" />
+          <ScalarProperty Name="CallApi_Realm" ColumnName="CallApi_Realm" />
+          <ScalarProperty Name="CallApi_script" ColumnName="CallApi_script" />
+          <ScalarProperty Name="CallApi_deploy" ColumnName="CallApi_deploy" />
+          <ScalarProperty Name="CallApi_ComID" ColumnName="CallApi_ComID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LicenseTbls">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.LicenseTbl">
+        <MappingFragment StoreEntitySet="LicenseTbl">
+          <ScalarProperty Name="Recourd_ID" ColumnName="Recourd_ID" />
+          <ScalarProperty Name="ComName" ColumnName="ComName" />
+          <ScalarProperty Name="TaxNumber" ColumnName="TaxNumber" />
+          <ScalarProperty Name="DBName" ColumnName="DBName" />
+          <ScalarProperty Name="DBAccount" ColumnName="DBAccount" />
+          <ScalarProperty Name="DBPassword" ColumnName="DBPassword" />
+          <ScalarProperty Name="SetteingDBNAME" ColumnName="SetteingDBNAME" />
+          <ScalarProperty Name="Conn" ColumnName="Conn" />
+          <ScalarProperty Name="Logger" ColumnName="Logger" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Measurement_Units_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Measurement_Units_Tbl">
+        <MappingFragment StoreEntitySet="Measurement_Units_Tbl">
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="Measurement_Units" ColumnName="Measurement_Units" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyContact_tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.MyContact_tbl">
+        <MappingFragment StoreEntitySet="MyContact_tbl">
+          <ScalarProperty Name="TeleponeNumber" ColumnName="TeleponeNumber" />
+          <ScalarProperty Name="WhatsAppSendMsgStatus" ColumnName="WhatsAppSendMsgStatus" />
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="WhatsAppSendMsgTime" ColumnName="WhatsAppSendMsgTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Names_Translation_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Names_Translation_Tbl">
+        <MappingFragment StoreEntitySet="Names_Translation_Tbl">
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="Arabic" ColumnName="Arabic" />
+          <ScalarProperty Name="English" ColumnName="English" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payment_Point_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Payment_Point_Tbl">
+        <MappingFragment StoreEntitySet="Payment_Point_Tbl">
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ActualAmount" ColumnName="ActualAmount" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="SettlementType" ColumnName="SettlementType" />
+          <ScalarProperty Name="BillNo" ColumnName="BillNo" />
+          <ScalarProperty Name="CheckDetails" ColumnName="CheckDetails" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="CollectionPeriod" ColumnName="CollectionPeriod" />
+          <ScalarProperty Name="Penalty" ColumnName="Penalty" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="SupplyExpenses" ColumnName="SupplyExpenses" />
+          <ScalarProperty Name="Other" ColumnName="Other" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PosMachin_tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.PosMachin_tbl">
+        <MappingFragment StoreEntitySet="PosMachin_tbl">
+          <ScalarProperty Name="comid" ColumnName="comid" />
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+          <ScalarProperty Name="POS_id" ColumnName="POS_id" />
+          <ScalarProperty Name="LicenseExpiryDate" ColumnName="LicenseExpiryDate" />
+          <ScalarProperty Name="POSName" ColumnName="POSName" />
+          <ScalarProperty Name="posserial" ColumnName="posserial" />
+          <ScalarProperty Name="clintId" ColumnName="clintId" />
+          <ScalarProperty Name="scId" ColumnName="scId" />
+          <ScalarProperty Name="pososversion" ColumnName="pososversion" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ENVIRONMENT" ColumnName="ENVIRONMENT" />
+          <ScalarProperty Name="AndroidID" ColumnName="AndroidID" />
+          <ScalarProperty Name="licenseStatus" ColumnName="licenseStatus" />
+          <ScalarProperty Name="databaseConnGet" ColumnName="databaseConnGet" />
+          <ScalarProperty Name="databaseConnSet" ColumnName="databaseConnSet" />
+          <ScalarProperty Name="DBSetType" ColumnName="DBSetType" />
+          <ScalarProperty Name="DBGetType" ColumnName="DBGetType" />
+          <ScalarProperty Name="LastRunning" ColumnName="LastRunning" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registeration_Request_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Registeration_Request_Tbl">
+        <MappingFragment StoreEntitySet="Registeration_Request_Tbl">
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="AndroidID" ColumnName="AndroidID" />
+          <ScalarProperty Name="PosSerial" ColumnName="PosSerial" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RunningLog_tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.RunningLog_tbl">
+        <MappingFragment StoreEntitySet="RunningLog_tbl">
+          <ScalarProperty Name="Record_Id" ColumnName="Record_Id" />
+          <ScalarProperty Name="running_time" ColumnName="running_time" />
+          <ScalarProperty Name="branshId" ColumnName="branshId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="inv_count" ColumnName="inv_count" />
+          <ScalarProperty Name="running_feadback" ColumnName="running_feadback" />
+          <ScalarProperty Name="SellerRin" ColumnName="SellerRin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales_Tbl">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.Sales_Tbl">
+        <MappingFragment StoreEntitySet="Sales_Tbl">
+          <ScalarProperty Name="TeleponeNumber" ColumnName="TeleponeNumber" />
+          <ScalarProperty Name="WhatsAppSendMsgStatus" ColumnName="WhatsAppSendMsgStatus" />
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="WhatsAppSendMsgTime" ColumnName="WhatsAppSendMsgTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAssignComps">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblAssignComp">
+        <MappingFragment StoreEntitySet="TblAssignComp">
+          <ScalarProperty Name="Comp_TAX_No" ColumnName="Comp_TAX_No" />
+          <ScalarProperty Name="Group_RecordID" ColumnName="Group_RecordID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+          <ScalarProperty Name="Com_ID" ColumnName="Com_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAssignFunctions">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblAssignFunction">
+        <MappingFragment StoreEntitySet="TblAssignFunctions">
+          <ScalarProperty Name="Group_RecordID" ColumnName="Group_RecordID" />
+          <ScalarProperty Name="Function_RecordID" ColumnName="Function_RecordID" />
+          <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAssignGroups">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblAssignGroup">
+        <MappingFragment StoreEntitySet="TblAssignGroup">
+          <ScalarProperty Name="User_RecordID" ColumnName="User_RecordID" />
+          <ScalarProperty Name="Group_RecordID" ColumnName="Group_RecordID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAttachedFiles">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblAttachedFile">
+        <MappingFragment StoreEntitySet="TblAttachedFiles">
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblDeals">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblDeal">
+        <MappingFragment StoreEntitySet="TblDeals">
+          <ScalarProperty Name="MOBILE" ColumnName="MOBILE" />
+          <ScalarProperty Name="OVD" ColumnName="OVD" />
+          <ScalarProperty Name="DEAL_DATE" ColumnName="DEAL_DATE" />
+          <ScalarProperty Name="NEW_EMI_DATE" ColumnName="NEW_EMI_DATE" />
+          <ScalarProperty Name="DEAL_AMOUNT" ColumnName="DEAL_AMOUNT" />
+          <ScalarProperty Name="DEPOSIT" ColumnName="DEPOSIT" />
+          <ScalarProperty Name="NEW_EMI" ColumnName="NEW_EMI" />
+          <ScalarProperty Name="C1ST_MONTH" ColumnName="1ST_MONTH" />
+          <ScalarProperty Name="TENOR" ColumnName="TENOR" />
+          <ScalarProperty Name="WAIVED_AMOUNT" ColumnName="WAIVED_AMOUNT" />
+          <ScalarProperty Name="ACTION_TRUE" ColumnName="ACTION_TRUE" />
+          <ScalarProperty Name="LEGAL" ColumnName="LEGAL" />
+          <ScalarProperty Name="LETTER" ColumnName="LETTER" />
+          <ScalarProperty Name="CALL_RECORDED_TIME" ColumnName="CALL_RECORDED_TIME" />
+          <ScalarProperty Name="EXT" ColumnName="EXT" />
+          <ScalarProperty Name="AGENCY" ColumnName="AGENCY" />
+          <ScalarProperty Name="OFFICER" ColumnName="OFFICER" />
+          <ScalarProperty Name="NOTES" ColumnName="NOTES" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="ACC" ColumnName="ACC" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="CUSTOMER" ColumnName="CUSTOMER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblErrors">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblError">
+        <MappingFragment StoreEntitySet="TblError">
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Error" ColumnName="Error" />
+          <ScalarProperty Name="Msg" ColumnName="Msg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblFunctions">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblFunction">
+        <MappingFragment StoreEntitySet="TblFunctions">
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+          <ScalarProperty Name="Perm" ColumnName="Perm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblGroups">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblGroup">
+        <MappingFragment StoreEntitySet="TblGroups">
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MainGroup_ID" ColumnName="MainGroup_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblLoginTypes">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblLoginType">
+        <MappingFragment StoreEntitySet="TblLoginType">
+          <ScalarProperty Name="LoginType" ColumnName="LoginType" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblPasswordHistories">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblPasswordHistory">
+        <MappingFragment StoreEntitySet="TblPasswordHistory">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="User_RecordID" ColumnName="User_RecordID" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUsers">
+      <EntityTypeMapping TypeName="Scopos_Customers_DBModel.TblUser">
+        <MappingFragment StoreEntitySet="TblUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserAccount" ColumnName="UserAccount" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LoginType" ColumnName="LoginType" />
+          <ScalarProperty Name="AccountIsDisabled" ColumnName="AccountIsDisabled" />
+          <ScalarProperty Name="AccountsIsLockedOut" ColumnName="AccountsIsLockedOut" />
+          <ScalarProperty Name="LoginState" ColumnName="LoginState" />
+          <ScalarProperty Name="AuthenticationRequired" ColumnName="AuthenticationRequired" />
+          <ScalarProperty Name="Manager_RecordID" ColumnName="Manager_RecordID" />
+          <ScalarProperty Name="Branch_RecordID" ColumnName="Branch_RecordID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="LastPasswordUpdate" ColumnName="LastPasswordUpdate" />
+          <ScalarProperty Name="PasswordNeverExpires" ColumnName="PasswordNeverExpires" />
+          <ScalarProperty Name="UserCannotChangePassword" ColumnName="UserCannotChangePassword" />
+          <ScalarProperty Name="UserMustChangePasswordAtNextLogon" ColumnName="UserMustChangePasswordAtNextLogon" />
+          <ScalarProperty Name="Editor" ColumnName="Editor" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

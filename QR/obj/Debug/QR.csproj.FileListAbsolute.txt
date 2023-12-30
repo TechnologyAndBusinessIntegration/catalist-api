@@ -1,0 +1,310 @@
+D:\TBI Projects\QR\QR\obj\Debug\QR.csproj.AssemblyReference.cache
+D:\TBI Projects\QR\QR\obj\Debug\QR.csproj.CoreCompileInputs.cache
+D:\TBI Projects\QR\QR\bin\QR.dll.config
+D:\TBI Projects\QR\QR\bin\QR.dll
+D:\TBI Projects\QR\QR\bin\QR.pdb
+D:\TBI Projects\QR\QR\bin\roslyn\csc.exe
+D:\TBI Projects\QR\QR\bin\roslyn\csc.exe.config
+D:\TBI Projects\QR\QR\bin\roslyn\csc.rsp
+D:\TBI Projects\QR\QR\bin\roslyn\csi.exe
+D:\TBI Projects\QR\QR\bin\roslyn\csi.exe.config
+D:\TBI Projects\QR\QR\bin\roslyn\csi.rsp
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TBI Projects\QR\QR\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.AppContext.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Collections.Immutable.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Console.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Globalization.Calendars.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.IO.Compression.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.IO.FileSystem.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Net.Http.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Net.Sockets.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Reflection.Metadata.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.ValueTuple.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Xml.XPath.dll
+D:\TBI Projects\QR\QR\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TBI Projects\QR\QR\bin\roslyn\vbc.exe
+D:\TBI Projects\QR\QR\bin\roslyn\vbc.exe.config
+D:\TBI Projects\QR\QR\bin\roslyn\vbc.rsp
+D:\TBI Projects\QR\QR\bin\roslyn\VBCSCompiler.exe
+D:\TBI Projects\QR\QR\bin\roslyn\VBCSCompiler.exe.config
+D:\TBI Projects\QR\QR\bin\Antlr3.Runtime.dll
+D:\TBI Projects\QR\QR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TBI Projects\QR\QR\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\TBI Projects\QR\QR\bin\Microsoft.Web.Infrastructure.dll
+D:\TBI Projects\QR\QR\bin\Newtonsoft.Json.dll
+D:\TBI Projects\QR\QR\bin\System.Buffers.dll
+D:\TBI Projects\QR\QR\bin\System.Memory.dll
+D:\TBI Projects\QR\QR\bin\System.Net.Http.Formatting.dll
+D:\TBI Projects\QR\QR\bin\System.Numerics.Vectors.dll
+D:\TBI Projects\QR\QR\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\TBI Projects\QR\QR\bin\System.Text.Encoding.CodePages.dll
+D:\TBI Projects\QR\QR\bin\System.Web.Helpers.dll
+D:\TBI Projects\QR\QR\bin\System.Web.Http.dll
+D:\TBI Projects\QR\QR\bin\System.Web.Http.WebHost.dll
+D:\TBI Projects\QR\QR\bin\System.Web.Mvc.dll
+D:\TBI Projects\QR\QR\bin\System.Web.Optimization.dll
+D:\TBI Projects\QR\QR\bin\System.Web.Razor.dll
+D:\TBI Projects\QR\QR\bin\System.Web.WebPages.Deployment.dll
+D:\TBI Projects\QR\QR\bin\System.Web.WebPages.dll
+D:\TBI Projects\QR\QR\bin\System.Web.WebPages.Razor.dll
+D:\TBI Projects\QR\QR\bin\WebGrease.dll
+D:\TBI Projects\QR\QR\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\TBI Projects\QR\QR\bin\System.Buffers.xml
+D:\TBI Projects\QR\QR\bin\System.Memory.xml
+D:\TBI Projects\QR\QR\bin\System.Numerics.Vectors.xml
+D:\TBI Projects\QR\QR\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\TBI Projects\QR\QR\bin\System.Text.Encoding.CodePages.xml
+D:\TBI Projects\QR\QR\bin\Newtonsoft.Json.xml
+D:\TBI Projects\QR\QR\bin\System.Net.Http.Formatting.xml
+D:\TBI Projects\QR\QR\bin\System.Web.Helpers.xml
+D:\TBI Projects\QR\QR\bin\System.Web.Http.xml
+D:\TBI Projects\QR\QR\bin\System.Web.Http.WebHost.xml
+D:\TBI Projects\QR\QR\bin\System.Web.Mvc.xml
+D:\TBI Projects\QR\QR\bin\System.Web.Optimization.xml
+D:\TBI Projects\QR\QR\bin\System.Web.Razor.xml
+D:\TBI Projects\QR\QR\bin\System.Web.WebPages.xml
+D:\TBI Projects\QR\QR\bin\System.Web.WebPages.Deployment.xml
+D:\TBI Projects\QR\QR\bin\System.Web.WebPages.Razor.xml
+D:\TBI Projects\QR\QR\bin\Antlr3.Runtime.pdb
+D:\TBI Projects\QR\QR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TBI Projects\QR\QR\obj\Debug\QR.csproj.CopyComplete
+D:\TBI Projects\QR\QR\obj\Debug\QR.dll
+D:\TBI Projects\QR\QR\obj\Debug\QR.pdb
+D:\TBI Projects\QR\QR\bin\Zen.Barcode.Core.dll
+D:\TBI Projects\QR\QR\bin\Microsoft.VisualStudio.DebuggerVisualizers.dll
+D:\TBI Projects\QR\QR\bin\EntityFramework.dll
+D:\TBI Projects\QR\QR\bin\EntityFramework.SqlServer.dll
+D:\TBI Projects\QR\QR\bin\EntityFramework.xml
+D:\TBI Projects\QR\QR\bin\EntityFramework.SqlServer.xml
+E:\TBI Company Project\QR\QR\bin\QR.dll.config
+E:\TBI Company Project\QR\QR\bin\QR.dll
+E:\TBI Company Project\QR\QR\bin\QR.pdb
+E:\TBI Company Project\QR\QR\bin\roslyn\csc.exe
+E:\TBI Company Project\QR\QR\bin\roslyn\csc.exe.config
+E:\TBI Company Project\QR\QR\bin\roslyn\csc.rsp
+E:\TBI Company Project\QR\QR\bin\roslyn\csi.exe
+E:\TBI Company Project\QR\QR\bin\roslyn\csi.exe.config
+E:\TBI Company Project\QR\QR\bin\roslyn\csi.rsp
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.Managed.Core.targets
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\TBI Company Project\QR\QR\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.AppContext.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Collections.Immutable.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Console.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Globalization.Calendars.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.IO.Compression.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.IO.FileSystem.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Net.Http.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Net.Sockets.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Reflection.Metadata.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.ValueTuple.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Xml.XmlDocument.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Xml.XPath.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\TBI Company Project\QR\QR\bin\roslyn\vbc.exe
+E:\TBI Company Project\QR\QR\bin\roslyn\vbc.exe.config
+E:\TBI Company Project\QR\QR\bin\roslyn\vbc.rsp
+E:\TBI Company Project\QR\QR\bin\roslyn\VBCSCompiler.exe
+E:\TBI Company Project\QR\QR\bin\roslyn\VBCSCompiler.exe.config
+E:\TBI Company Project\QR\QR\bin\Antlr3.Runtime.dll
+E:\TBI Company Project\QR\QR\bin\EntityFramework.dll
+E:\TBI Company Project\QR\QR\bin\EntityFramework.SqlServer.dll
+E:\TBI Company Project\QR\QR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\TBI Company Project\QR\QR\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\TBI Company Project\QR\QR\bin\Microsoft.Web.Infrastructure.dll
+E:\TBI Company Project\QR\QR\bin\Newtonsoft.Json.dll
+E:\TBI Company Project\QR\QR\bin\System.Buffers.dll
+E:\TBI Company Project\QR\QR\bin\System.Memory.dll
+E:\TBI Company Project\QR\QR\bin\System.Net.Http.Formatting.dll
+E:\TBI Company Project\QR\QR\bin\System.Numerics.Vectors.dll
+E:\TBI Company Project\QR\QR\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\TBI Company Project\QR\QR\bin\System.Text.Encoding.CodePages.dll
+E:\TBI Company Project\QR\QR\bin\System.Web.Helpers.dll
+E:\TBI Company Project\QR\QR\bin\System.Web.Http.dll
+E:\TBI Company Project\QR\QR\bin\System.Web.Http.WebHost.dll
+E:\TBI Company Project\QR\QR\bin\System.Web.Mvc.dll
+E:\TBI Company Project\QR\QR\bin\System.Web.Optimization.dll
+E:\TBI Company Project\QR\QR\bin\System.Web.Razor.dll
+E:\TBI Company Project\QR\QR\bin\System.Web.WebPages.Deployment.dll
+E:\TBI Company Project\QR\QR\bin\System.Web.WebPages.dll
+E:\TBI Company Project\QR\QR\bin\System.Web.WebPages.Razor.dll
+E:\TBI Company Project\QR\QR\bin\Zen.Barcode.Core.dll
+E:\TBI Company Project\QR\QR\bin\WebGrease.dll
+E:\TBI Company Project\QR\QR\bin\EntityFramework.xml
+E:\TBI Company Project\QR\QR\bin\EntityFramework.SqlServer.xml
+E:\TBI Company Project\QR\QR\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\TBI Company Project\QR\QR\bin\Newtonsoft.Json.xml
+E:\TBI Company Project\QR\QR\bin\System.Buffers.xml
+E:\TBI Company Project\QR\QR\bin\System.Memory.xml
+E:\TBI Company Project\QR\QR\bin\System.Numerics.Vectors.xml
+E:\TBI Company Project\QR\QR\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\TBI Company Project\QR\QR\bin\System.Text.Encoding.CodePages.xml
+E:\TBI Company Project\QR\QR\bin\System.Net.Http.Formatting.xml
+E:\TBI Company Project\QR\QR\bin\System.Web.Helpers.xml
+E:\TBI Company Project\QR\QR\bin\System.Web.Http.xml
+E:\TBI Company Project\QR\QR\bin\System.Web.Http.WebHost.xml
+E:\TBI Company Project\QR\QR\bin\System.Web.Mvc.xml
+E:\TBI Company Project\QR\QR\bin\System.Web.Optimization.xml
+E:\TBI Company Project\QR\QR\bin\System.Web.Razor.xml
+E:\TBI Company Project\QR\QR\bin\System.Web.WebPages.xml
+E:\TBI Company Project\QR\QR\bin\System.Web.WebPages.Deployment.xml
+E:\TBI Company Project\QR\QR\bin\System.Web.WebPages.Razor.xml
+E:\TBI Company Project\QR\QR\bin\Antlr3.Runtime.pdb
+E:\TBI Company Project\QR\QR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\TBI Company Project\QR\QR\obj\Debug\QR.csproj.AssemblyReference.cache
+E:\TBI Company Project\QR\QR\obj\Debug\QR.csproj.CoreCompileInputs.cache
+E:\TBI Company Project\QR\QR\obj\Debug\QR.csproj.CopyComplete
+E:\TBI Company Project\QR\QR\obj\Debug\QR.dll
+E:\TBI Company Project\QR\QR\obj\Debug\QR.pdb
+D:\TBI Folder\QR\QR\bin\QR.dll.config
+D:\TBI Folder\QR\QR\bin\QR.dll
+D:\TBI Folder\QR\QR\bin\QR.pdb
+D:\TBI Folder\QR\QR\bin\roslyn\csc.exe
+D:\TBI Folder\QR\QR\bin\roslyn\csc.exe.config
+D:\TBI Folder\QR\QR\bin\roslyn\csc.rsp
+D:\TBI Folder\QR\QR\bin\roslyn\csi.exe
+D:\TBI Folder\QR\QR\bin\roslyn\csi.exe.config
+D:\TBI Folder\QR\QR\bin\roslyn\csi.rsp
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TBI Folder\QR\QR\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.AppContext.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Collections.Immutable.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Console.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Globalization.Calendars.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.IO.Compression.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.IO.FileSystem.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Net.Http.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Net.Sockets.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Reflection.Metadata.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.ValueTuple.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Xml.XPath.dll
+D:\TBI Folder\QR\QR\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TBI Folder\QR\QR\bin\roslyn\vbc.exe
+D:\TBI Folder\QR\QR\bin\roslyn\vbc.exe.config
+D:\TBI Folder\QR\QR\bin\roslyn\vbc.rsp
+D:\TBI Folder\QR\QR\bin\roslyn\VBCSCompiler.exe
+D:\TBI Folder\QR\QR\bin\roslyn\VBCSCompiler.exe.config
+D:\TBI Folder\QR\QR\bin\Antlr3.Runtime.dll
+D:\TBI Folder\QR\QR\bin\EntityFramework.dll
+D:\TBI Folder\QR\QR\bin\EntityFramework.SqlServer.dll
+D:\TBI Folder\QR\QR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TBI Folder\QR\QR\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\TBI Folder\QR\QR\bin\Microsoft.VisualStudio.DebuggerVisualizers.dll
+D:\TBI Folder\QR\QR\bin\Microsoft.Web.Infrastructure.dll
+D:\TBI Folder\QR\QR\bin\Newtonsoft.Json.dll
+D:\TBI Folder\QR\QR\bin\System.Buffers.dll
+D:\TBI Folder\QR\QR\bin\System.Memory.dll
+D:\TBI Folder\QR\QR\bin\System.Net.Http.Formatting.dll
+D:\TBI Folder\QR\QR\bin\System.Numerics.Vectors.dll
+D:\TBI Folder\QR\QR\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\TBI Folder\QR\QR\bin\System.Text.Encoding.CodePages.dll
+D:\TBI Folder\QR\QR\bin\System.Web.Helpers.dll
+D:\TBI Folder\QR\QR\bin\System.Web.Http.dll
+D:\TBI Folder\QR\QR\bin\System.Web.Http.WebHost.dll
+D:\TBI Folder\QR\QR\bin\System.Web.Mvc.dll
+D:\TBI Folder\QR\QR\bin\System.Web.Optimization.dll
+D:\TBI Folder\QR\QR\bin\System.Web.Razor.dll
+D:\TBI Folder\QR\QR\bin\System.Web.WebPages.Deployment.dll
+D:\TBI Folder\QR\QR\bin\System.Web.WebPages.dll
+D:\TBI Folder\QR\QR\bin\System.Web.WebPages.Razor.dll
+D:\TBI Folder\QR\QR\bin\Zen.Barcode.Core.dll
+D:\TBI Folder\QR\QR\bin\WebGrease.dll
+D:\TBI Folder\QR\QR\bin\EntityFramework.xml
+D:\TBI Folder\QR\QR\bin\EntityFramework.SqlServer.xml
+D:\TBI Folder\QR\QR\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\TBI Folder\QR\QR\bin\Newtonsoft.Json.xml
+D:\TBI Folder\QR\QR\bin\System.Buffers.xml
+D:\TBI Folder\QR\QR\bin\System.Memory.xml
+D:\TBI Folder\QR\QR\bin\System.Numerics.Vectors.xml
+D:\TBI Folder\QR\QR\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\TBI Folder\QR\QR\bin\System.Text.Encoding.CodePages.xml
+D:\TBI Folder\QR\QR\bin\System.Net.Http.Formatting.xml
+D:\TBI Folder\QR\QR\bin\System.Web.Helpers.xml
+D:\TBI Folder\QR\QR\bin\System.Web.Http.xml
+D:\TBI Folder\QR\QR\bin\System.Web.Http.WebHost.xml
+D:\TBI Folder\QR\QR\bin\System.Web.Mvc.xml
+D:\TBI Folder\QR\QR\bin\System.Web.Optimization.xml
+D:\TBI Folder\QR\QR\bin\System.Web.Razor.xml
+D:\TBI Folder\QR\QR\bin\System.Web.WebPages.xml
+D:\TBI Folder\QR\QR\bin\System.Web.WebPages.Deployment.xml
+D:\TBI Folder\QR\QR\bin\System.Web.WebPages.Razor.xml
+D:\TBI Folder\QR\QR\bin\Antlr3.Runtime.pdb
+D:\TBI Folder\QR\QR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TBI Folder\QR\QR\obj\Debug\QR.csproj.AssemblyReference.cache
+D:\TBI Folder\QR\QR\obj\Debug\QR.csproj.CoreCompileInputs.cache
+D:\TBI Folder\QR\QR\obj\Debug\QR.csproj.CopyComplete
+D:\TBI Folder\QR\QR\obj\Debug\QR.dll
+D:\TBI Folder\QR\QR\obj\Debug\QR.pdb
+D:\TBI Folder\QR\QR\bin\RestSharp.dll
+D:\TBI Folder\QR\QR\bin\RestSharp.xml

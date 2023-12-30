@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="CustomersDb-Web.config Connection String" description="CustomersDb Connection String used in web.config by the application to access the database." defaultValue="data source=A2NWPLSK14SQL-v06.shr.prod.iad2.secureserver.net;initial catalog=SCOPOS_INV_Customers_DB;persist security info=True;user id=INV_Rotana;password = T81@1NV#2o2IT02oo2; MultipleActiveResultSets=True;App=EntityFramework ; Integrated Security=false" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\TBI\ Folder\\QR\\QR\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CustomersDb']/@connectionString" />
+  </parameter>
+</parameters>
