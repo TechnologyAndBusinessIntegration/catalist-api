@@ -20,10 +20,9 @@ namespace QR.Models
             if (actionContext.Request.Headers.Authorization == null)
             {
                 /// Hash THIS 
-                ////
                 //Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity("ahmed"), null);
                 //////
-                ///
+                
 
                 actionContext.Response = actionContext.Request.CreateResponse(System.Net.HttpStatusCode.Unauthorized);
             }
