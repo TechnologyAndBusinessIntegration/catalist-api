@@ -19,10 +19,18 @@ namespace QR.Models
         {
             if (actionContext.Request.Headers.Authorization == null)
             {
+                /// Hash THIS 
+                ////
+                //Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity("ahmed"), null);
+                //////
+                ///
+
                 actionContext.Response = actionContext.Request.CreateResponse(System.Net.HttpStatusCode.Unauthorized);
             }
             else
             {
+
+           
                 string authToken = actionContext.Request.Headers.Authorization.Parameter;
                 string decodedAuthToken = Encoding.UTF8.GetString(Convert.FromBase64String(authToken));
                 string[] UandP = decodedAuthToken.Split(':');

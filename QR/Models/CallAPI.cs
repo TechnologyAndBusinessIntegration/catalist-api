@@ -37,6 +37,13 @@ namespace QR.Models
             public string bank_address { get; set; }
         }
 
+  
+        public class tax
+        {
+            public decimal tax_rate { get; set; }
+            public string tax_sub_type { get; set; }
+            public string tax_type { get; set; }
+        }
         public class Item
         {
             public double discount_amount { get; set; }
@@ -53,10 +60,12 @@ namespace QR.Models
             public string unit_type { get; set; }
             public string unit_price { get; set; }
             public string name { get; set; }
-        }
+            public List<tax> tax{ get; set; }
+    }
 
         public class Invoice
         {
+            public string  ErrorDescription { get; set; } 
             public string document_type { get; set; }
             public string number { get; set; }
             public string delivery_terms { get; set; }

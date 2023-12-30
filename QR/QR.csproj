@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Connibrary">
+      <HintPath>..\..\A Company Data &amp; dlls\DLLS\Connibrary.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -61,6 +64,9 @@
     <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.15.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.15.0\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -185,6 +191,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="BL\APISCalls\ETAAuthorization.cs" />
+    <Compile Include="BL\APISCalls\GetReceiptPdf.cs" />
+    <Compile Include="BL\CallApi.cs" />
+    <Compile Include="BL\IReceiptService.cs" />
+    <Compile Include="BL\ReceiptService.cs" />
     <Compile Include="branch_tbl.cs">
       <DependentUpon>CustomersData.tt</DependentUpon>
     </Compile>
@@ -199,7 +210,9 @@
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\QRController.cs" />
+    <Compile Include="Controllers\ReceiptController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\ViewController.cs" />
     <Compile Include="Currency_Tbl.cs">
       <DependentUpon>CustomersData.tt</DependentUpon>
     </Compile>
@@ -234,6 +247,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Converter.cs" />
+    <Compile Include="Helpers\TbiServer.cs" />
     <Compile Include="Integrate_setup_tbl_New.cs">
       <DependentUpon>CustomersData.tt</DependentUpon>
     </Compile>
@@ -245,9 +259,60 @@
     </Compile>
     <Compile Include="Models\ApplicationAuthenticationHandler.cs" />
     <Compile Include="Models\BasicAuthenticationAttribute.cs" />
+    <Compile Include="Models\BillResponseVM.cs" />
     <Compile Include="Models\CallAPI.cs" />
+    <Compile Include="Models\CustomersDB\AssignCus_V.cs" />
+    <Compile Include="Models\CustomersDB\AssignFunctions_V.cs" />
+    <Compile Include="Models\CustomersDB\AssignGroups_V.cs" />
+    <Compile Include="Models\CustomersDB\AssignSales_V.cs" />
+    <Compile Include="Models\CustomersDB\branch_tbl.cs" />
+    <Compile Include="Models\CustomersDB\branshs_log_tbl.cs" />
+    <Compile Include="Models\CustomersDB\Category_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\COM_INFO_ETA_Report_V.cs" />
+    <Compile Include="Models\CustomersDB\COM_INFO_Inv_WS_V.cs" />
+    <Compile Include="Models\CustomersDB\COM_INFO_V.cs" />
+    <Compile Include="Models\CustomersDB\Com_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\Currency_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\CustomersDb.cs" />
+    <Compile Include="Models\CustomersDB\Cus_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\Department_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\ETA_document_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\GS1_ITEMS_TBL.cs" />
+    <Compile Include="Models\CustomersDB\Integrate_setup_tbl_New.cs" />
+    <Compile Include="Models\CustomersDB\invalid_usingUrl_log_tbl.cs" />
+    <Compile Include="Models\CustomersDB\item.cs" />
+    <Compile Include="Models\CustomersDB\Items_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\LicenseTbl.cs" />
+    <Compile Include="Models\CustomersDB\MainCom_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\Measurement_Units_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\MyContact_tbl.cs" />
+    <Compile Include="Models\CustomersDB\Names_Translation_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\Payment_Point_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\PosMachin_tbl.cs" />
+    <Compile Include="Models\CustomersDB\Registeration_Request_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\Registration_Request_V.cs" />
+    <Compile Include="Models\CustomersDB\RunningLog_tbl.cs" />
+    <Compile Include="Models\CustomersDB\Sales_Tbl.cs" />
+    <Compile Include="Models\CustomersDB\Scopos_error_log_tbl.cs" />
+    <Compile Include="Models\CustomersDB\TblAssignComp.cs" />
+    <Compile Include="Models\CustomersDB\TblAssignFunction.cs" />
+    <Compile Include="Models\CustomersDB\TblAssignGroup.cs" />
+    <Compile Include="Models\CustomersDB\TblAttachedFile.cs" />
+    <Compile Include="Models\CustomersDB\TblDeal.cs" />
+    <Compile Include="Models\CustomersDB\TblError.cs" />
+    <Compile Include="Models\CustomersDB\TblFunction.cs" />
+    <Compile Include="Models\CustomersDB\TblGroup.cs" />
+    <Compile Include="Models\CustomersDB\TblLoginType.cs" />
+    <Compile Include="Models\CustomersDB\TblPasswordHistory.cs" />
+    <Compile Include="Models\CustomersDB\TblUser.cs" />
+    <Compile Include="Models\CustomersDB\V_Users.cs" />
+    <Compile Include="Models\CustomersDB\zPOSRegistrationRequest.cs" />
     <Compile Include="Models\MyFunctions.cs" />
+    <Compile Include="Models\ReceiptResult.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\Token.cs" />
     <Compile Include="Models\UserSecurity.cs" />
+    <Compile Include="Models\ValidateAndUnValidateReceipts.cs" />
     <Compile Include="MyContact_tbl.cs">
       <DependentUpon>CustomersData.tt</DependentUpon>
     </Compile>
@@ -351,7 +416,9 @@
     <Content Include="CustomersData.edmx.diagram">
       <DependentUpon>CustomersData.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\Catalyst-API.tbico.cloud - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\e-receipt-api-eDigits.tbico.cloud - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\e-receipt-api-eDigits.tbico.pubxml" />
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -376,6 +443,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Receipt\" />
+    <Folder Include="Views\ShowInvoice\" />
+    <Folder Include="Views\View\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -427,7 +497,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57431</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44399/</IISUrl>
+          <IISUrl>https://localhost:44390/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

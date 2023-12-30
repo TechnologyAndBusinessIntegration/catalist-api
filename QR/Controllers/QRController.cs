@@ -172,5 +172,7 @@ namespace QR.Controllers
                 base64String = Convert.ToBase64String(imageBytes);
             }
          */
+
+
     }
 }
